@@ -8,8 +8,7 @@ public class Test : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Map map = new Map();
-        map.id = 1;
+        Map map = MapOperations.LoadMapFromAssets("Resources/test.json");
 
         Debug.Log(map.id);
     }
