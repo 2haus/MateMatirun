@@ -65,6 +65,17 @@ namespace MMBackend
                 else if (type == NoteTypes.Pit) pits++;
             }
         }
+
+        /// <summary>
+        /// Calculates time pressed on a note.
+        /// </summary>
+        /// <param name="index">Index of notes array.</param>
+        /// <param name="time">Time when note pressed.</param>
+        /// <returns>Negative values if early, positive values if late.</returns>
+        public float CompareTime(int index, float time)
+        {
+            return notes[index] - time;
+        }
     }
 
     // location may be differ upon output
