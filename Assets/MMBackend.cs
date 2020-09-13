@@ -27,7 +27,6 @@ namespace MMBackend
         public int enemies = 0;
         public int pits = 0;
 
-        // find better way to detect notes and types length the same
         /// <summary>
         /// Creates a Map object.
         /// </summary>
@@ -36,9 +35,13 @@ namespace MMBackend
         /// <param name="artist">Map song's artist</param>
         /// <param name="bpm">Map song's BPM.</param>
         /// <param name="notes">Map notes in TimeSpan array.</param>
-        /// <param name="types">Map notes' types in NoteTypes array. Must be same length as notes.</param>
+        /// <param name="types">Map notes' types in NoteTypes array. Must be same length as notes and last type must be finish.</param>
+        /// <exception cref="InvalidDataException">Returned if notes and types length aren't equal.</exception>
         public Map(int id, string title, string artist, int bpm, TimeSpan[] notes, NoteTypes[] types)
         {
+            // if length aren't same and last type is not finish
+            if (notes.Length != types.Length && types[types.Length - 1] != NoteTypes.Finish) throw new InvalidDataException();
+
             this.id = id;
             this.title = title;
             this.artist = artist;
