@@ -130,7 +130,7 @@ namespace MMBackend
         {
             if (!path.EndsWith(".json")) return 1;
 
-            StreamWriter write = new StreamWriter(File.Open(path, FileMode.Create));
+            StreamWriter write = new StreamWriter(File.Open("Assets/" + path, FileMode.Create));
             write.WriteLine(JsonConvert.SerializeObject(map));
             write.Close();
 
