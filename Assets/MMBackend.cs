@@ -17,15 +17,21 @@ namespace MMBackend
 
     public class Map
     {
+        // metadata
         public int id;
         public string title;
         public string artist;
         public int bpm;
-        public TimeSpan[] notes;
+
+        // objects
+        public float[] notes;
         public NoteTypes[] types;
         public int noteCount;
         public int enemies = 0;
         public int pits = 0;
+
+        // files
+        public string songPath;
 
         /// <summary>
         /// Creates a Map object.
@@ -36,8 +42,9 @@ namespace MMBackend
         /// <param name="bpm">Map song's BPM.</param>
         /// <param name="notes">Map notes in TimeSpan array.</param>
         /// <param name="types">Map notes' types in NoteTypes array. Must be same length as notes and last type must be finish.</param>
+        /// <param name="songPath">Map song's path. It it recommended to put the file in Resources folder and type the filename directly.</param>
         /// <exception cref="InvalidDataException">Returned if notes and types length aren't equal.</exception>
-        public Map(int id, string title, string artist, int bpm, TimeSpan[] notes, NoteTypes[] types)
+        public Map(int id, string title, string artist, int bpm, float[] notes, NoteTypes[] types, string songPath)
         {
             // if length aren't same and last type is not finish
             if (notes.Length != types.Length && types[types.Length - 1] != NoteTypes.Finish) throw new InvalidDataException();
@@ -48,12 +55,14 @@ namespace MMBackend
             this.bpm = bpm;
             this.notes = notes;
             this.types = types;
-            this.noteCount = this.notes.Length;
+            noteCount = notes.Length;
+            this.songPath = Path.GetFileNameWithoutExtension(songPath);
+
             // enemies and pits count
             foreach (NoteTypes type in types)
             {
-                if (type == NoteTypes.FrontEnemy || type == NoteTypes.BackEnemy) this.enemies++;
-                else if (type == NoteTypes.Pit) this.pits++;
+                if (type == NoteTypes.FrontEnemy || type == NoteTypes.BackEnemy) enemies++;
+                else if (type == NoteTypes.Pit) pits++;
             }
         }
     }
