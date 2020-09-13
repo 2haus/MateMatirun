@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{1D3A291A-ACF1-3CE0-B632-1986F66E5EEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMBackend", "MMBackend\MMBackend.csproj", "{4D55561C-FAFB-48F2-979E-5BBDAE8FE14D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,10 +13,6 @@ Global
 		{1D3A291A-ACF1-3CE0-B632-1986F66E5EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D3A291A-ACF1-3CE0-B632-1986F66E5EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D3A291A-ACF1-3CE0-B632-1986F66E5EEC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D55561C-FAFB-48F2-979E-5BBDAE8FE14D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D55561C-FAFB-48F2-979E-5BBDAE8FE14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D55561C-FAFB-48F2-979E-5BBDAE8FE14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D55561C-FAFB-48F2-979E-5BBDAE8FE14D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
