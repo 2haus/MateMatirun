@@ -81,6 +81,7 @@ namespace MMBackend
     // location may be differ upon output
     public class MapOperations
     {
+        [Obsolete("This method should not be used as it might cause conflicts as Resources folder is not exported as a folder. Please use Resources.Load<TextAsset>() instead.")]
         /// <summary>
         /// Loads a map (.json) from specified path.
         /// Default path is Unity project's folder.
@@ -96,6 +97,7 @@ namespace MMBackend
             return open;
         }
 
+        [Obsolete("This method should not be used as it might cause conflicts as Resources folder is not exported as a folder. Please use Resources.Load<TextAsset>() instead.")]
         /// <summary>
         /// Loads a map (.json) from specified path, inside Assets folder.
         /// </summary>
@@ -110,6 +112,7 @@ namespace MMBackend
             return open;
         }
 
+        [Obsolete("This method should not be used as it might cause errors as Unity Player can't save any file explicitly.")]
         /// <summary>
         /// Saves a map to JSON file in the target path.
         /// Include .json in path naming.
@@ -129,6 +132,7 @@ namespace MMBackend
             return 0;
         }
 
+        [Obsolete("This method should not be used as it might cause errors as Unity Player can't save any file explicitly.")]
         /// <summary>
         /// Saves a map to JSON file in the target path, inside Assets folder.
         /// Include .json in path naming.
