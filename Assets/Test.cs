@@ -1,37 +1,45 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Newtonsoft.Json;
 using MMBackend;
 
 public class Test : MonoBehaviour
 {
+    public Transform[] arts;
+    public Text artist, title;
     new AudioSource audio;
-    float length;
     float keyTime;
-    float fadeTime;
-    int presses;
-    bool pause;
+    bool pause, invokeNext, invokeBack;
+    int input;
     Map map;
+    string[] paths = {
+        "1", // 1.json
+        "2"  // 2.json
+    };
 
     // Start is called before the first frame update
     void Start()
     {
         audio = GetComponent<AudioSource>();
 
-        map = JsonConvert.DeserializeObject<Map>(Resources.Load<TextAsset>("test").ToString());
-        
-        Debug.Log(map.songPath);
+        map = JsonConvert.DeserializeObject<Map>(Resources.Load<TextAsset>(paths[0]).ToString());
+
         var clip = Resources.Load<AudioClip>(map.songPath);
-        length = clip.length;
         audio.clip = clip;
         audio.volume = 0f;
         SetTimeSampleToPreview();
         audio.Play();
         audio.Pause();
+        artist.text = map.artist;
+        title.text = map.title;
+
+        Debug.Log(map.songPath);
+        input = 1;
+
         pause = true;
-        fadeTime = 0;
-        presses = 0;
+        invokeNext = invokeBack = false;
     }
 
     void FixedUpdate()
@@ -42,6 +50,28 @@ public class Test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(invokeNext || invokeBack)
+        {
+            if (audio.volume > 0f)
+            {
+                audio.volume -= 0.05f;
+                Debug.Log(audio.volume);
+                return;
+            }
+            else
+            {
+                Debug.Log("else entered");
+                if (invokeNext)
+                {
+                    ChangeTrack(true);
+                }
+                if (invokeBack)
+                {
+                    ChangeTrack(false);
+                }
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.H) && pause && !audio.isPlaying)
         {
             pause = false;
@@ -54,55 +84,63 @@ public class Test : MonoBehaviour
 
         if (audio.isPlaying && !pause && audio.volume != 1f)
         {
-            audio.volume += 0.005f;
+            audio.volume += 0.05f;
             Debug.Log(audio.volume);
         }
-        else if(audio.isPlaying && pause && audio.volume != 0f)
-        {
-            audio.volume -= 0.005f;
-            Debug.Log(audio.volume);
-            if(audio.volume == 0f)
-            {
-                pause = true;
-                audio.Pause();
 
-                // this time, after paused, change sample back
-                SetTimeSampleToPreview();
-            }
+        if(Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            invokeNext = true;
         }
-
-
-        // Debug.Log(audio.timeSamples);
-
-        // j, j, space, f, finish
-        if(Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.Space))
+        else if(Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            keyTime = audio.time;
-            Debug.Log("Pressed on: " + keyTime);
-
-            if(Input.GetKeyDown(KeyCode.F) && map.types[presses] == NoteTypes.BackEnemy)
-            {
-                presses++;
-                Debug.Log("Time: " + map.CompareTime(presses - 1, keyTime));
-            }
-            else if(Input.GetKeyDown(KeyCode.J) && map.types[presses] == NoteTypes.FrontEnemy)
-            {
-                presses++;
-                Debug.Log("Time: " + map.CompareTime(presses - 1, keyTime));
-            }
-            else if(Input.GetKeyDown(KeyCode.Space) && map.types[presses] == NoteTypes.Pit)
-            {
-                presses++;
-                Debug.Log("Time: " + map.CompareTime(presses - 1, keyTime));
-            }
+            invokeBack = true;
         }
     }
 
     void SetTimeSampleToPreview()
     {
         // get sample time from json
-        int previewSample = 1029235;
+        int previewSample = map.preview;
 
         audio.timeSamples = previewSample;
+    }
+
+    void ChangeTrack(bool next)
+    {
+        if(next)
+        {
+            input++;
+            for(int i = 0; i < arts.Length; i++)
+            {
+                arts[i].transform.localPosition = new Vector2(arts[i].transform.localPosition.x - 110, 0);
+            }
+        }
+        else
+        {
+            input--;
+            for (int i = 0; i < arts.Length; i++)
+            {
+                arts[i].transform.localPosition = new Vector2(arts[i].transform.localPosition.x + 110, 0);
+            }
+        }
+        ReloadTrack();
+    }
+
+    void ReloadTrack()
+    {
+        Debug.Log("Changing.");
+        map = JsonConvert.DeserializeObject<Map>(Resources.Load<TextAsset>(paths[input - 1]).ToString());
+        artist.text = map.artist;
+        title.text = map.title;
+
+        var clip = Resources.Load<AudioClip>(map.songPath);
+        Debug.Log(map.songPath);
+        audio.clip = clip;
+        SetTimeSampleToPreview();
+        audio.Play();
+
+
+        invokeNext = invokeBack = false;
     }
 }

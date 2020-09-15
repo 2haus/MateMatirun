@@ -22,6 +22,7 @@ namespace MMBackend
         public string title;
         public string artist;
         public int bpm;
+        public int preview;
 
         // objects
         public float[] notes;
@@ -40,11 +41,12 @@ namespace MMBackend
         /// <param name="title">Map song's title.</param>
         /// <param name="artist">Map song's artist</param>
         /// <param name="bpm">Map song's BPM.</param>
+        /// <param name="preview">Map song's preview point (as timeSamples).</param>
         /// <param name="notes">Map notes in TimeSpan array.</param>
         /// <param name="types">Map notes' types in NoteTypes array. Must be same length as notes and last type must be finish.</param>
         /// <param name="songPath">Map song's path. It it recommended to put the file in Resources folder and type the filename directly.</param>
         /// <exception cref="InvalidDataException">Returned if notes and types length aren't equal.</exception>
-        public Map(int id, string title, string artist, int bpm, float[] notes, NoteTypes[] types, string songPath)
+        public Map(int id, string title, string artist, int bpm, int preview, float[] notes, NoteTypes[] types, string songPath)
         {
             // if length aren't same and last type is not finish
             if (notes.Length != types.Length && types[types.Length - 1] != NoteTypes.Finish) throw new InvalidDataException();
@@ -53,6 +55,7 @@ namespace MMBackend
             this.title = title;
             this.artist = artist;
             this.bpm = bpm;
+            this.preview = preview;
             this.notes = notes;
             this.types = types;
             noteCount = notes.Length;
