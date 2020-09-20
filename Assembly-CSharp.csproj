@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\MainMenuBackground.cs" />
     <Compile Include="Assets\Scripts\MainMenuGroundSpawner.cs" />
     <Compile Include="Assets\Scripts\ButtonTextClick.cs" />
+    <Compile Include="Assets\Scripts\MainMenuPlayButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

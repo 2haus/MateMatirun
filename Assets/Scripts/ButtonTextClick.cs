@@ -12,7 +12,6 @@ public class ButtonTextClick : MonoBehaviour
     void Start()
     {
         position = text.localPosition;
-        Debug.Log(position);
     }
 
     public void MoveDown()
