@@ -54,11 +54,12 @@
   <ItemGroup>
     <Compile Include="Assets\Test.cs" />
     <Compile Include="Assets\Scripts\MainMenuBackgroundSpawner.cs" />
+    <Compile Include="Assets\Scripts\MainMenuGround.cs" />
     <Compile Include="Assets\Scripts\MainMenuCharacter.cs" />
     <Compile Include="Assets\MMBackend.cs" />
     <Compile Include="Assets\Scripts\MainMenuBackground.cs" />
-    <Compile Include="Assets\Scripts\MainMenuGround.cs" />
     <Compile Include="Assets\Scripts\MainMenuGroundSpawner.cs" />
+    <Compile Include="Assets\Scripts\ButtonTextClick.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
