@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuBackground : MonoBehaviour
 {
@@ -9,24 +10,35 @@ public class MainMenuBackground : MonoBehaviour
     MainMenuCharacter status;
     Animator anim;
     float speed;
+    string scene;
 
     // Start is called before the first frame update
     void Start()
     {
+        scene = SceneManager.GetActiveScene().name;
+
         spawner = GameObject.Find("BackgroundSpawner").GetComponent<MainMenuBackgroundSpawner>();
         character = GameObject.Find("Player");
-        status = character.GetComponent<MainMenuCharacter>();
-        anim = character.GetComponent<Animator>();
-        speed = 0.01f;
+        if (scene == "SongSelect")
+        {
+            status = character.GetComponent<MainMenuCharacter>();
+            anim = character.GetComponent<Animator>();
+            speed = 0.01f;
+        }
+        else speed = 0.002f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("playerRun") && status.center)
+        if(scene == "SongSelect")
         {
-            transform.Translate(Vector3.left * speed);
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("playerRun") && status.center)
+            {
+                transform.Translate(Vector3.left * speed);
+            }
         }
+        else transform.Translate(Vector3.left * speed);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
