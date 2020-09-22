@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\SettingBackButton.cs" />
     <Compile Include="Assets\Scripts\MainMenuSettingButton.cs" />
     <Compile Include="Assets\Scripts\SongSelectionClick.cs" />
+    <Compile Include="Assets\Scripts\SongSelectEntrance.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
