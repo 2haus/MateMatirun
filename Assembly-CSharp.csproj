@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\MainMenuGroundSpawner.cs" />
     <Compile Include="Assets\Scripts\SettingBackButton.cs" />
     <Compile Include="Assets\Scripts\MainMenuSettingButton.cs" />
+    <Compile Include="Assets\Scripts\SongSelectionClick.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
