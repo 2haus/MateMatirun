@@ -33,13 +33,14 @@ public class Test : MonoBehaviour
         audio.volume = 0f;
         SetTimeSampleToPreview();
         audio.Play();
+        audio.UnPause();
         artist.text = map.artist;
         title.text = map.title;
 
         Debug.Log(map.songPath);
         input = 1;
 
-        pause = true;
+        pause = false;
         invokeNext = invokeBack = false;
     }
 
