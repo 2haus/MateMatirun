@@ -15,6 +15,24 @@ namespace MMBackend
         Finish
     }
 
+    public class Timing
+    {
+        public float time;
+        public float x;
+
+        /// <summary>
+        /// Creates a timing class.
+        /// Used for timeline x timing placement.
+        /// </summary>
+        /// <param name="time">Object timing in seconds.</param>
+        /// <param name="x">Position of the timing in Transform, starting from first timer.</param>
+        public Timing(float time, float x)
+        {
+            this.time = time;
+            this.x = x;
+        }
+    }
+
     public class Map
     {
         // metadata
