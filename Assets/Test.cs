@@ -33,7 +33,6 @@ public class Test : MonoBehaviour
         audio.volume = 0f;
         SetTimeSampleToPreview();
         audio.Play();
-        audio.Pause();
         artist.text = map.artist;
         title.text = map.title;
 
@@ -72,16 +71,6 @@ public class Test : MonoBehaviour
                     ChangeTrack(false);
                 }
             }
-        }
-
-        if (Input.GetKeyDown(KeyCode.H) && pause && !audio.isPlaying)
-        {
-            pause = false;
-            audio.UnPause();
-        }
-        else if (Input.GetKeyDown(KeyCode.H) && !pause && audio.isPlaying)
-        {
-            pause = true;
         }
 
         if (audio.isPlaying && !pause && audio.volume != 1f)
