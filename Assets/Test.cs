@@ -23,10 +23,12 @@ public class Test : MonoBehaviour
     void Start()
     {
         audio = GetComponent<AudioSource>();
+        Debug.Log(paths[0]);
 
         map = JsonConvert.DeserializeObject<Map>(Resources.Load<TextAsset>(paths[0]).ToString());
 
-        var clip = Resources.Load<AudioClip>(map.songPath);
+        Debug.Log(Application.streamingAssetsPath + "/" + map.songPath);
+        var clip = Resources.Load<AudioClip>("Songs" + "/" + map.songPath);
         audio.clip = clip;
         audio.volume = 0f;
         SetTimeSampleToPreview();
@@ -134,7 +136,7 @@ public class Test : MonoBehaviour
         artist.text = map.artist;
         title.text = map.title;
 
-        var clip = Resources.Load<AudioClip>(map.songPath);
+        var clip = Resources.Load<AudioClip>("Songs" + "/" + map.songPath);
         Debug.Log(map.songPath);
         audio.clip = clip;
         SetTimeSampleToPreview();
