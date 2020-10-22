@@ -1,6 +1,11 @@
 ﻿using System;
 using System.IO;
+using System.Runtime.InteropServices;
 using Newtonsoft.Json;
+
+// use only needed classes
+using AudioClip = UnityEngine.AudioClip;
+using Resources = UnityEngine.Resources;
 
 namespace MMBackend
 {
@@ -9,16 +14,23 @@ namespace MMBackend
     /// </summary>
     public enum NoteTypes
     {
-        FrontEnemy = 1,
+        None = 0,
+        FrontEnemy,
         BackEnemy,
         Pit,
         Finish
     }
 
+    /// <summary>
+    /// Timing class.
+    /// </summary>
     public class Timing
     {
-        public float time;
-        public float x;
+        public float time { get; set; }
+        public float x { get; set; }
+        public NoteTypes type { get; set; }
+
+        public Timing() { }
 
         /// <summary>
         /// Creates a timing class.
@@ -26,31 +38,65 @@ namespace MMBackend
         /// </summary>
         /// <param name="time">Object timing in seconds.</param>
         /// <param name="x">Position of the timing in Transform, starting from first timer.</param>
-        public Timing(float time, float x)
+        /// <param name="type">Type of the object in NoteTypes type.</param>
+        public Timing(float time, float x, NoteTypes type)
         {
             this.time = time;
             this.x = x;
+            this.type = type;
         }
     }
 
+    /// <summary>
+    /// Editor's judgement class.
+    /// </summary>
+    public class EditorJudgement : Timing
+    {
+        public EditorJudgement(float time, float x)
+        {
+            this.time = time;
+            this.x = x;
+            this.type = NoteTypes.None;
+        }
+
+        public EditorJudgement(float time, float x, NoteTypes type)
+        {
+            this.time = time;
+            this.x = x;
+            this.type = type;
+        }
+
+        public static int GetLeftClosestIndex(EditorJudgement[] judgements, float time)
+        {
+            for (int i = judgements.Length - 1; i >= 0; i--) if (time > judgements[i].time) return i;
+
+            return -1;
+        }
+    }
+
+    /// <summary>
+    /// Map class.
+    /// </summary>
     public class Map
     {
         // metadata
-        public int id;
-        public string title;
-        public string artist;
-        public int bpm;
-        public int preview;
+        public int id { get; set; }
+        public string title { get; set; }
+        public string artist { get; set; }
+        public int bpm { get; set; }
+        public int preview { get; set; }
 
         // objects
-        public float[] notes;
-        public NoteTypes[] types;
-        public int noteCount;
-        public int enemies = 0;
-        public int pits = 0;
+        public Timing[] timings { get; set; }
 
         // files
-        public string songPath;
+        public string songPath { get; set; }
+
+        /// <summary>
+        /// Creates an empty Map object.
+        /// Should only be used on editor scene.
+        /// </summary>
+        public Map() { }
 
         /// <summary>
         /// Creates a Map object.
@@ -60,31 +106,17 @@ namespace MMBackend
         /// <param name="artist">Map song's artist</param>
         /// <param name="bpm">Map song's BPM.</param>
         /// <param name="preview">Map song's preview point (as timeSamples).</param>
-        /// <param name="notes">Map notes in TimeSpan array.</param>
-        /// <param name="types">Map notes' types in NoteTypes array. Must be same length as notes and last type must be finish.</param>
+        /// <param name="timings">Map's timings as Timing array.</param>
         /// <param name="songPath">Map song's path. It it recommended to put the file in Resources folder and type the filename directly.</param>
-        /// <exception cref="InvalidDataException">Returned if notes and types length aren't equal.</exception>
-        public Map(int id, string title, string artist, int bpm, int preview, float[] notes, NoteTypes[] types, string songPath)
+        public Map(int id, string title, string artist, int bpm, int preview, Timing[] timings, string songPath)
         {
-            // if length aren't same and last type is not finish
-            if (notes.Length != types.Length && types[types.Length - 1] != NoteTypes.Finish) throw new InvalidDataException();
-
             this.id = id;
             this.title = title;
             this.artist = artist;
             this.bpm = bpm;
             this.preview = preview;
-            this.notes = notes;
-            this.types = types;
-            noteCount = notes.Length;
+            this.timings = timings;
             this.songPath = Path.GetFileNameWithoutExtension(songPath);
-
-            // enemies and pits count
-            foreach (NoteTypes type in types)
-            {
-                if (type == NoteTypes.FrontEnemy || type == NoteTypes.BackEnemy) enemies++;
-                else if (type == NoteTypes.Pit) pits++;
-            }
         }
 
         /// <summary>
@@ -95,12 +127,59 @@ namespace MMBackend
         /// <returns>Negative values if early, positive values if late.</returns>
         public float CompareTime(int index, float time)
         {
-            return notes[index] - time;
+            return timings[index].time - time;
+        }
+
+        public float AudioToTotalPosition()
+        {
+            float length;
+
+            AudioClip clip = Resources.Load<AudioClip>("Songs/" + this.songPath);
+            length = clip.length;
+            clip.UnloadAudioData();
+
+            return length * 2.5f;
+        }
+
+        /// <summary>
+        /// Get all notes' count.
+        /// </summary>
+        /// <returns>Number of all notes.</returns>
+        public int GetNoteCount()
+        {
+            int count = 0;
+
+            foreach(Timing timing in timings) count++;
+            return count;
+        }
+
+        /// <summary>
+        /// Get all enemies' count.
+        /// This includes Front and Back types.
+        /// </summary>
+        /// <returns>Number of all enemies.</returns>
+        public int GetEnemiesCount()
+        {
+            int count = 0;
+
+            foreach(Timing timing in timings) if (timing.type == NoteTypes.FrontEnemy || timing.type == NoteTypes.BackEnemy) count++;
+            return count;
+        }
+
+        /// <summary>
+        /// Get all pits' count.
+        /// </summary>
+        /// <returns>Number of all pits.</returns>
+        public int GetPitCount()
+        {
+            int count = 0;
+
+            foreach(Timing timing in timings) if (timing.type == NoteTypes.Pit) count++;
+            return count;
         }
     }
 
-    // location may be differ upon output
-    public class MapOperations
+    public static class MapOperations
     {
         [Obsolete("This method should not be used as it might cause conflicts as Resources folder is not exported as a folder. Please use Resources.Load<TextAsset>() instead.")]
         /// <summary>
@@ -171,6 +250,25 @@ namespace MMBackend
             write.Close();
 
             return 0;
+        }
+    }
+
+    public class Assets
+    {
+        public class Backgrounds
+        {
+            public class Length
+            {
+                public static float centerOffset = 7.92f;
+                public static float jump = 15.84f;
+            }
+
+            public static int NumberOfBackgrounds(float length, bool audioLength)
+            {
+                if (audioLength) length *= 2.5f;
+
+                return (int)Math.Ceiling(length / Length.jump);
+            }
         }
     }
 }

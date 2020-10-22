@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3188364189079118985}
   - component: {fileID: 3188364189079118984}
-  - component: {fileID: 3188364189079118987}
   m_Layer: 0
   m_Name: Judgement
   m_TagString: Untagged
@@ -83,19 +82,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3188364189079118987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3188364189079118986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f918c1dd12b37574c8b02a4ee00f1ca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  judgementPrefab: {fileID: 0}
-  timer: {fileID: 0}
-  audio: {fileID: 0}
-  playing: 0

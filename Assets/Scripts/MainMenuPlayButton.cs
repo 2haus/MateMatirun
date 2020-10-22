@@ -14,7 +14,7 @@ public class MainMenuPlayButton : MonoBehaviour
     {
         GetComponent<Button>().onClick.AddListener(EnterSongSelect);
         animate = false;
-        speed = 40f;
+        speed = 10f;
     }
 
     void Update()
@@ -27,10 +27,10 @@ public class MainMenuPlayButton : MonoBehaviour
             {
                 item.Translate(Vector2.left * speed * Time.deltaTime);
             }
-            speed += 160f;
+            speed += 40f;
         }
 
-        if(time >= 0.5f && !switching)
+        if(time >= 1f && !switching)
         {
             switching = true;
             animate = false;
