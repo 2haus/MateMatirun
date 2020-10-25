@@ -34,8 +34,15 @@ namespace MMBackend.MapEditor
             loader.LoadAudio(map.songPath);
             // judgements.SetJudgements((EditorJudgement[])map.timings); // unable to cast, using list instead
             List<EditorJudgement> temp = new List<EditorJudgement>();
-            foreach(Timing timing in map.timings) temp.Add(new EditorJudgement(timing.time, timing.x, timing.type));
-            judgements.SetJudgements(temp.ToArray());
+            if(map.timings != null)
+            {
+                foreach (Timing time in map.timings)
+                {
+                    temp.Add(new EditorJudgement(time.time, time.x, time.type));
+                }
+
+                judgements.SetJudgements(temp.ToArray());
+            }
 
             if (!loaded)
             {

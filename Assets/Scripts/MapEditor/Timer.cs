@@ -162,8 +162,6 @@ namespace MMBackend.MapEditor
 
             EditorJudgement target = judgements.GetAllJudgements()[active];
             SetCurrentJudgement(target);
-
-            Debug.Log(active);
         }
     }
 }

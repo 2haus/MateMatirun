@@ -23,10 +23,10 @@ namespace CTF.MapEditor
         void Remove()
         {
             int active = timer.GetActiveJudgement();
-            Debug.Log(active);
 
             judgementHolder.RemoveJudgement(active);
-            timer.SetActiveJudgement(active - 1);
+            if (active != 0) timer.SetActiveJudgement(active - 1);
+            else timer.SetActiveJudgement(active);
         }
     }
 }
