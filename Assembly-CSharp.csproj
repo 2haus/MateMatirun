@@ -52,24 +52,40 @@
     <UnityVersion>2020.1.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\MapEditor\NoteTypeDropdown.cs" />
     <Compile Include="Assets\Test.cs" />
+    <Compile Include="Assets\Scripts\MapEditor\MapInfoEditor.cs" />
+    <Compile Include="Assets\Scripts\MapEditor\EditorJudgementHolder.cs" />
     <Compile Include="Assets\Scripts\MainMenuBackgroundSpawner.cs" />
+    <Compile Include="Assets\Scripts\MapEditor\MainButtons.cs" />
     <Compile Include="Assets\Scripts\SettingSound.cs" />
     <Compile Include="Assets\Scripts\MainMenuSettingButton.cs" />
+    <Compile Include="Assets\Scripts\MapEditor\SaveDialog.cs" />
+    <Compile Include="Assets\Scripts\MapEditor\EditInfoButton.cs" />
     <Compile Include="Assets\Scripts\SongSelectEntrance.cs" />
     <Compile Include="Assets\Scripts\MainMenuGround.cs" />
+    <Compile Include="Assets\Scripts\MapEditor\Backend\SaveLoad.cs" />
     <Compile Include="Assets\Scripts\MainMenuCharacter.cs" />
     <Compile Include="Assets\Scripts\SongSelectionClick.cs" />
     <Compile Include="Assets\Scripts\MainMenuPlayButton.cs" />
     <Compile Include="Assets\Scripts\SettingMusic.cs" />
+    <Compile Include="Assets\Scripts\MapEditor\LoadDialog.cs" />
     <Compile Include="Assets\MMBackend.cs" />
     <Compile Include="Assets\Scripts\SettingOffset.cs" />
     <Compile Include="Assets\Scripts\MainMenuBackground.cs" />
-    <Compile Include="Assets\Scripts\MainMenuGroundSpawner.cs" />
-    <Compile Include="Assets\Scripts\SettingBackButton.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\Timer.cs" />
+    <Compile Include="Assets\Scripts\MapEditor\LoadButton.cs" />
     <Compile Include="Assets\Scripts\MapEditor\InputHandler.cs" />
+    <Compile Include="Assets\Scripts\MainMenuGroundSpawner.cs" />
     <Compile Include="Assets\Scripts\MapEditor\AudioLoader.cs" />
+    <Compile Include="Assets\Scripts\MapEditor\Backend\TimerTranslate.cs" />
+    <Compile Include="Assets\Scripts\MapEditor\SaveButton.cs" />
+    <Compile Include="Assets\Scripts\MapEditor\Timer.cs" />
+    <Compile Include="Assets\Scripts\MapEditor\MapInfoHolder.cs" />
+    <Compile Include="Assets\Scripts\SettingBackButton.cs" />
+    <Compile Include="Assets\Scripts\MapEditor\DeleteButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
