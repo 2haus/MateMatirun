@@ -33,7 +33,7 @@ namespace MMBackend.MapEditor
             activeJudge.SetActive(false);
 
             playing = false;
-            active = 0;
+            active = -1;
             scrolling = false;
         }
 
@@ -105,8 +105,16 @@ namespace MMBackend.MapEditor
         {
             EditorJudgement[] temp = judgements.GetAllJudgements();
 
-            if(!playing && temp.Length != 0 && active != 0)
+            if (!playing && temp.Length != 0 && active > -1)
             {
+                if(active == 0)
+                {
+                    SetCurrentJudgement(new EditorJudgement(0f, 0f));
+                    active = -1;
+
+                    return;
+                }
+
                 EditorJudgement target;
 
                 if (!scrolling) target = temp[active];
@@ -119,6 +127,11 @@ namespace MMBackend.MapEditor
                     scrolling = true;
                     activeJudge.SetActive(true);
                 }
+            }
+            else if (temp.Length == 0)
+            {
+                SetCurrentJudgement(new EditorJudgement(0f, 0f));
+                active = -1;
             }
         }
 
