@@ -8,13 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SongSelectTest.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main.unity
     guid: a2fa70628fbccbb4e9dffa3a5b0cc140
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SongSelect.unity
     guid: 10c1af852b852dc4f8c1ec75aaf67767
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Setting.unity
     guid: dba3e664baf65704e8cd50d2c6a4d041
+  - enabled: 1
+    path: Assets/Scenes/Play.unity
+    guid: 0d101c56edf4c0848b2bd4d4338b5ea2
   m_configObjects: {}
