@@ -10,6 +10,7 @@ public class NoteSpawner : MonoBehaviour
     public void Spawn(int id, float time)
     {
         GameObject spawnedNote = (GameObject)Instantiate(note, transform.position, transform.rotation);
+        spawnedNote.gameObject.name = "Note";
         spawnedNote.GetComponent<NoteLogic>().time = time;
         spawnedNote.GetComponent<NoteLogic>().noteID = id;
     }
