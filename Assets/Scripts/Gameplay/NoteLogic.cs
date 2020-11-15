@@ -17,14 +17,16 @@ public class NoteLogic : MonoBehaviour
     private void Start()
     {
         startPosition = transform.position;
-        targetPosition = new Vector2(-1, 0);
+        targetPosition = new Vector2(-7.3f, -3);
+
+        time *= 2;
 
         StartCoroutine(Lerp());
     }
 
     private void Update()
     {
-        if (transform.position.x <= -1 && once)
+        if (transform.position.x <= -0.65f && once)
         {
             sfx.Play();
             once = false;
