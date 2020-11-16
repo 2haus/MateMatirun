@@ -11,8 +11,16 @@ public class GameController : MonoBehaviour
     public MusicCore map;
     public MusicScoring score;
     public MusicJudgement judge;
+    public PlayerController player;
+
+    public int limiter;
 
     public Text scoreType;
+
+    private void Start()
+    {
+        limiter = 0;
+    }
 
     private void Update()
     {
@@ -20,11 +28,13 @@ public class GameController : MonoBehaviour
             sfx.Play();
 
             // Check judgement
-            if (judge.noteID != -1)
+            if (limiter > 0)
             {
-                float value = map.CheckJudgement(judge.noteID);
+                float value = map.CheckJudgement(player.notePos);
                 Debug.Log(value);
                 scoreType.text = score.HitResult(value);
+                player.Hit();
+                limiter--;
             }
         }
     }
