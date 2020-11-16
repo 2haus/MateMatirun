@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1a293a1d-f1ac-e03c-b632-1986f66e5eec}</ProjectGuid>
+    <ProjectGuid>{5cbbe3be-7cfd-9a2f-73df-d772affaee98}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -35,68 +35,12 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-<<<<<<< HEAD
-=======
-  <PropertyGroup>
-    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.3</UnityProjectGeneratorVersion>
-    <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
-    <UnityVersion>2020.1.11f1</UnityVersion>
-  </PropertyGroup>
-  <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\Scripts\Gameplay\NoteLogic.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\NoteTypeDropdown.cs" />
-    <Compile Include="Assets\Test.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\MapInfoEditor.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\EditorJudgementHolder.cs" />
-    <Compile Include="Assets\Scripts\MainMenuBackgroundSpawner.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\MainButtons.cs" />
-    <Compile Include="Assets\Scripts\SettingSound.cs" />
-    <Compile Include="Assets\Scripts\MainMenuSettingButton.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\SaveDialog.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\EditInfoButton.cs" />
-    <Compile Include="Assets\Scripts\SongSelectEntrance.cs" />
-    <Compile Include="Assets\Scripts\MainMenuGround.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\Backend\SaveLoad.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\MusicCore.cs" />
-    <Compile Include="Assets\Scripts\MainMenuCharacter.cs" />
-    <Compile Include="Assets\Scripts\SongSelectionClick.cs" />
-    <Compile Include="Assets\Scripts\MainMenuPlayButton.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\MusicJudgement.cs" />
-    <Compile Include="Assets\Scripts\SettingMusic.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\LoadDialog.cs" />
-    <Compile Include="Assets\MMBackend.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\DebugTest.cs" />
-    <Compile Include="Assets\Scripts\SettingOffset.cs" />
-    <Compile Include="Assets\Scripts\MainMenuBackground.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\LoadButton.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\GameController.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\InputHandler.cs" />
-    <Compile Include="Assets\Scripts\MainMenuGroundSpawner.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\AudioLoader.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\Backend\TimerTranslate.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\SaveButton.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\NoteSpawner.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\Timer.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\MapInfoHolder.cs" />
-    <Compile Include="Assets\Scripts\SettingBackButton.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\MusicScoring.cs" />
-    <Compile Include="Assets\Scripts\MapEditor\DeleteButton.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\GameLimiter.cs" />
-  </ItemGroup>
->>>>>>> 232ecf2ec9e283b59c3038601e770eec739f3e71
   <ItemGroup>
      <Compile Include="Assets\Scripts\Gameplay\NoteLogic.cs" />
      <Compile Include="Assets\Scripts\MapEditor\NoteTypeDropdown.cs" />
      <Compile Include="Assets\Test.cs" />
      <Compile Include="Assets\Scripts\MapEditor\MapInfoEditor.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\GameLimiter.cs" />
      <Compile Include="Assets\Scripts\MapEditor\EditorJudgementHolder.cs" />
      <Compile Include="Assets\Scripts\MainMenuBackgroundSpawner.cs" />
      <Compile Include="Assets\Scripts\MapEditor\MainButtons.cs" />
@@ -118,6 +62,7 @@
      <Compile Include="Assets\MMBackend.cs" />
      <Compile Include="Assets\Scripts\Gameplay\DebugTest.cs" />
      <Compile Include="Assets\Scripts\SettingOffset.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\PlayerController.cs" />
      <Compile Include="Assets\Scripts\MainMenuBackground.cs" />
      <Compile Include="Assets\Scripts\MapEditor\LoadButton.cs" />
      <Compile Include="Assets\Scripts\Gameplay\GameController.cs" />
@@ -132,6 +77,9 @@
      <Compile Include="Assets\Scripts\SettingBackButton.cs" />
      <Compile Include="Assets\Scripts\Gameplay\MusicScoring.cs" />
      <Compile Include="Assets\Scripts\MapEditor\DeleteButton.cs" />
+     <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Scripts\Ground.cs" />
+     <Compile Include="Assets\Scripts\DecoSpawner.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -322,7 +270,7 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.11f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Assets/Plugins/Newtonsoft.Json.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Assets/Plugins/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.11f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -670,85 +618,85 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.11f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/User/Documents/GitHub/MateMatirun/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>D:/Unity/Semester 5/Matematirun Local/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
