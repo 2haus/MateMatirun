@@ -17,11 +17,11 @@ public class MainMenuGround : MonoBehaviour
         character = GameObject.Find("Player");
         status = character.GetComponent<MainMenuCharacter>();
         anim = character.GetComponent<Animator>();
-        speed = 0.02f;
+        speed = 0.05f;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("playerRun") && status.center)
         {

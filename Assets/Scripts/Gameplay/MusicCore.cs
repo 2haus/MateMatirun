@@ -215,6 +215,7 @@ public class MusicCore : MonoBehaviour
     {
         float timePressed = songPosition;
         float compare = Mathf.Abs(timePressed - (float)judgementTime[note]);
+        Debug.Log(timePressed - (float)judgementTime[note]);
 
         return compare;
     }
@@ -240,14 +241,14 @@ public class MusicCore : MonoBehaviour
             lastDspTime = (float)AudioSettings.dspTime;
 
             // Debug Test
-            if (songPosition >= judgementTime[test] + universalOffset && test < judgementTime.Length)
+            if (songPosition >= judgementTime[test] + universalOffset && test < judgementTime.Length - 1)
             {
-                sfx.Play();
+                //sfx.Play();
                 test++;
             }
 
             // Spawner
-            if (songPosition >= judgementTime[pos] - timeGap + universalOffset && pos < judgementTime.Length)
+            if (songPosition >= judgementTime[pos] - timeGap + universalOffset && pos < judgementTime.Length - 1)
             {
                 float time = Mathf.Abs((judgementTime[pos] - songPosition));
                 spawner.Spawn(pos, time);

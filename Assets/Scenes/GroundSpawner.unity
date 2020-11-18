@@ -176,8 +176,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4247469700939332538, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
       propertyPath: speed
-      value: 0.1
+      value: 0.035
       objectReference: {fileID: 0}
+    - target: {fileID: 4247469700939332538, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
+      propertyPath: debug
+      value: 
+      objectReference: {fileID: 1693352210}
     - target: {fileID: 7825302357120532561, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
       propertyPath: m_Name
       value: Obs1 (7)
@@ -320,8 +324,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4247469700939332538, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
       propertyPath: speed
-      value: 0.1
+      value: 0.035
       objectReference: {fileID: 0}
+    - target: {fileID: 4247469700939332538, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
+      propertyPath: debug
+      value: 
+      objectReference: {fileID: 1693352210}
     - target: {fileID: 7825302357120532561, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
       propertyPath: m_Name
       value: Obs1 (6)
@@ -406,8 +414,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4247469700939332538, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
       propertyPath: speed
-      value: 0.1
+      value: 0.035
       objectReference: {fileID: 0}
+    - target: {fileID: 4247469700939332538, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
+      propertyPath: debug
+      value: 
+      objectReference: {fileID: 1693352210}
     - target: {fileID: 7825302357120532561, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
       propertyPath: m_Name
       value: Obs1
@@ -520,8 +532,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4247469700939332538, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
       propertyPath: speed
-      value: 0.1
+      value: 0.035
       objectReference: {fileID: 0}
+    - target: {fileID: 4247469700939332538, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
+      propertyPath: debug
+      value: 
+      objectReference: {fileID: 1693352210}
     - target: {fileID: 7825302357120532561, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
       propertyPath: m_Name
       value: Obs1 (5)
@@ -617,8 +633,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4247469700939332538, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
       propertyPath: speed
-      value: 0.1
+      value: 0.035
       objectReference: {fileID: 0}
+    - target: {fileID: 4247469700939332538, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
+      propertyPath: debug
+      value: 
+      objectReference: {fileID: 1693352210}
     - target: {fileID: 7825302357120532561, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
       propertyPath: m_Name
       value: Obs1 (8)
@@ -678,14 +698,61 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4247469700939332538, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
       propertyPath: speed
-      value: 0.1
+      value: 0.035
       objectReference: {fileID: 0}
+    - target: {fileID: 4247469700939332538, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
+      propertyPath: debug
+      value: 
+      objectReference: {fileID: 1693352210}
     - target: {fileID: 7825302357120532561, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
       propertyPath: m_Name
       value: Obs1 (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05c5c068709a76d469ebef241d44927d, type: 3}
+--- !u!1 &1693352209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1693352211}
+  - component: {fileID: 1693352210}
+  m_Layer: 0
+  m_Name: DebugTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1693352210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693352209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3965a8cf0119c74fa1988b69e88a3ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1693352211
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693352209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.0574713, y: -3.399421, z: -12.470073}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1753859289
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class DecoSpawner : MonoBehaviour
     {
         spriteRenderer = this.GetComponent<SpriteRenderer>();
         Randomize();
-        Debug.Log(spriteRenderer.sprite.textureRect.size);
+        //Debug.Log(spriteRenderer.sprite.textureRect.size);
     }
 
     public void Randomize(){

@@ -8,8 +8,13 @@ public class Ground : MonoBehaviour
     public Sprite[] Sprites;
     public float speed;
     Spawner Spawner;
+
+    public DebugS debug;
+
     void Start()
     {
+        debug = GameObject.Find("DebugTest").GetComponent<DebugS>();
+        debug.StartTimer();
         spriteRenderer = this.GetComponent<SpriteRenderer>();
         Spawner = GameObject.Find("GroundSpawner").GetComponent<Spawner>();
         Randomize();
@@ -28,8 +33,9 @@ public class Ground : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision){
-        Debug.Log(collision.gameObject.name);
+        //Debug.Log(collision.gameObject.name);
         if(collision.gameObject.name == "Destroyer"){
+            debug.StopTimer();
             Destroy(this.gameObject);
             Spawner.SpawnGround();
         }

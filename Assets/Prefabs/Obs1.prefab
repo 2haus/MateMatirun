@@ -215,7 +215,7 @@ MonoBehaviour:
   - {fileID: -1312876722122944563, guid: c8161bc58f0c63d41b1650f95615bf06, type: 3}
   - {fileID: 2309066373113962561, guid: c8161bc58f0c63d41b1650f95615bf06, type: 3}
   - {fileID: 7773302466721070348, guid: c8161bc58f0c63d41b1650f95615bf06, type: 3}
-  speed: 0.1
+  speed: 0.035
 --- !u!61 &2499973679456465831
 BoxCollider2D:
   m_ObjectHideFlags: 0
