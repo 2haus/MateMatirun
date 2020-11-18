@@ -20,6 +20,8 @@ public class MusicCore : MonoBehaviour
     float dspSongTime;
     float lastDspTime;
 
+    float universalOffset;
+
     private float[] judgementTime =
     {
         // Animagatari Medium judgementTime
@@ -203,6 +205,7 @@ public class MusicCore : MonoBehaviour
     public void GameStart()
     {
         song.Play();
+        universalOffset = 0;
         dspSongTime = (float)AudioSettings.dspTime;
         lastDspTime = dspSongTime;
         isPlaying = true;
@@ -237,14 +240,14 @@ public class MusicCore : MonoBehaviour
             lastDspTime = (float)AudioSettings.dspTime;
 
             // Debug Test
-            if (songPosition >= judgementTime[test] && test < 150)
+            if (songPosition >= judgementTime[test] + universalOffset && test < judgementTime.Length)
             {
                 sfx.Play();
                 test++;
             }
 
             // Spawner
-            if (songPosition >= judgementTime[pos] - timeGap && pos < 150)
+            if (songPosition >= judgementTime[pos] - timeGap + universalOffset && pos < judgementTime.Length)
             {
                 float time = Mathf.Abs((judgementTime[pos] - songPosition));
                 spawner.Spawn(pos, time);
