@@ -28,7 +28,6 @@ public class NoteLogic : MonoBehaviour
     {
         if (transform.position.x <= -0.65f && once)
         {
-            sfx.Play();
             once = false;
         }
     }
