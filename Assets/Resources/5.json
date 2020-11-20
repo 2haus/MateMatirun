@@ -1,0 +1,922 @@
+{
+    "id":1,
+    "title":"Anime o Katare!~Animegatari Dokokai no Theme~",
+    "artist":"Maya & Erika",
+    "bpm":185,
+    "preview":1029235,
+    "timings":[
+      {
+         "time": 1.071,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 1.719,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 2.368,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 3.017,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 3.665,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 4.314,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 4.963,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 5.611,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 5.936,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 6.260,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 6.909,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 7.557,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 8.206,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 8.530,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 8.855,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 9.503,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 10.152,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 10.801,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 11.449,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 12.098,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 12.746,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 13.395,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 14.044,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 14.692,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 15.341,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 15.665,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 15.990,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 16.314,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 16.638,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 17.287,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 17.936,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 18.260,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 18.584,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 18.909,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 19.233,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 19.882,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 20.530,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 21.179,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 21.503,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 21.828,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 23.125,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 24.098,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 24.422,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 25.071,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 25.719,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 26.206,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 26.692,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 27.017,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 27.665,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 28.314,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 28.963,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 29.287,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 29.611,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 30.098,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 30.584,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 30.909,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 31.395,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 31.882,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 32.206,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 32.855,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 33.503,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 34.152,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 34.801,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 35.449,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 36.098,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 36.422,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 36.746,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 37.395,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 38.044,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 38.692,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 39.017,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 39.341,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 39.665,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 45.179,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 45.828,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 46.476,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 46.963,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 47.449,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 47.773,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 48.422,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 49.071,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 49.395,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 49.719,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 50.044,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 50.368,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 51.665,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 52.963,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 54.260,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 54.909,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 55.557,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 56.855,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 60.746,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 61.071,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 61.395,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 61.719,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 62.044,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 62.368,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 62.692,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 63.017,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 63.341,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 63.665,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 63.990,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 64.314,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 64.638,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 65.125,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 65.611,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 65.936,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 66.584,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 66.909,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 67.233,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 67.719,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 68.206,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 68.530,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 69.179,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 69.828,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 70.801,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 71.125,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 71.449,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 71.773,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 72.098,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 72.422,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 72.746,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 73.071,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 73.395,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 73.719,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 74.044,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 74.368,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 74.692,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 75.017,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 75.503,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 75.990,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 76.314,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 76.801,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 77.287,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 77.611,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 78.098,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 78.584,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 78.909,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 79.557,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 80.206,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 81.179,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 81.503,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 82.152,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 82.801,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 83.449,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 83.773,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 84.134,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 84.782,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 85.431,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 86.079,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time": 86.728,
+         "x": 1.0,
+         "type": 1,
+         "regenerate": false
+      },
+      {
+         "time":4.501315,
+         "x":11.2500248,
+         "type":1,
+         "regenerate": true
+      }
+    ],
+    "songPath":"Maya & Erika - Anime o Katare!~Animegatari Dokokai no Theme~"
+ }
