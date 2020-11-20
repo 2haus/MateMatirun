@@ -83,7 +83,6 @@
     <Compile Include="Assets\Scripts\Gameplay\MusicJudgement.cs" />
     <Compile Include="Assets\Scripts\SettingMusic.cs" />
     <Compile Include="Assets\Scripts\MapEditor\LoadDialog.cs" />
-    <Compile Include="Assets\MMBackend.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DebugTest.cs" />
     <Compile Include="Assets\Scripts\SettingOffset.cs" />
     <Compile Include="Assets\Scripts\Gameplay\PlayerController.cs" />
@@ -103,6 +102,11 @@
     <Compile Include="Assets\Scripts\Gameplay\MusicScoring.cs" />
     <Compile Include="Assets\Scripts\MapEditor\DeleteButton.cs" />
     <Compile Include="Assets\Scripts\SettingsStore.cs" />
+    <Compile Include="Assets\Scripts\MMBackend\Timing.cs" />
+    <Compile Include="Assets\Scripts\MMBackend\Map.cs" />
+    <Compile Include="Assets\Scripts\MMBackend\Assets.cs" />
+    <Compile Include="Assets\Scripts\MMBackend\UserData.cs" />
+    <Compile Include="Assets\Scripts\MMBackend\MapOperations.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
