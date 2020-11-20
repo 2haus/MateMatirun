@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using MMBackend;
+using Newtonsoft.Json;
 
 public class Test : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class Test : MonoBehaviour
         audio = GetComponent<AudioSource>();
         Debug.Log(paths[0]);
 
-        map = JsonUtility.FromJson<Map>(Resources.Load<TextAsset>(paths[0]).ToString());
+        map = JsonConvert.DeserializeObject<Map>(Resources.Load<TextAsset>(paths[0]).ToString());
 
         Debug.Log(Application.streamingAssetsPath + "/" + map.songPath);
         var clip = Resources.Load<AudioClip>("Songs" + "/" + map.songPath);
@@ -121,7 +122,7 @@ public class Test : MonoBehaviour
     void ReloadTrack()
     {
         Debug.Log("Changing.");
-        map = JsonUtility.FromJson<Map>(Resources.Load<TextAsset>(paths[input - 1]).ToString());
+        map = JsonConvert.DeserializeObject<Map>(Resources.Load<TextAsset>(paths[input - 1]).ToString());
         artist.text = map.artist;
         title.text = map.title;
 

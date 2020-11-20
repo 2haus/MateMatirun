@@ -17,9 +17,6 @@ public class SettingOffset : MonoBehaviour
 
         offsetUp.onClick.AddListener(OffsetUp);
         offsetDown.onClick.AddListener(OffsetDown);
-
-        // get offset from playerprefs later
-        set = 0;
     }
 
     void UpdateData()
