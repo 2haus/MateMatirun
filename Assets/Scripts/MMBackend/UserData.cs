@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using UnityEngine;
+using Newtonsoft.Json;
 
 namespace MMBackend
 {
@@ -28,7 +29,7 @@ namespace MMBackend
             {
                 using (StreamWriter writer = new StreamWriter(File.Open($"{path}/settings.json", FileMode.Create)))
                 {
-                    writer.WriteLine(JsonUtility.ToJson(data));
+                    writer.WriteLine(JsonConvert.SerializeObject(data));
                 }
 
                 return 0;
@@ -56,7 +57,7 @@ namespace MMBackend
 
                 using (StreamReader reader = new StreamReader(File.Open($"{path}/settings.json", FileMode.Open)))
                 {
-                    temp = JsonUtility.FromJson<SettingsData>(reader.ReadToEnd());
+                    temp = JsonConvert.DeserializeObject<SettingsData>(reader.ReadToEnd());
                     return temp;
                 }
             }
