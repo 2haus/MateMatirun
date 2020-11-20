@@ -58,7 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Gameplay\NoteLogic.cs" />
     <Compile Include="Assets\Scripts\MapEditor\NoteTypeDropdown.cs" />
-    <Compile Include="Assets\Test.cs" />
+    <Compile Include="Assets\Scripts\DebugTest\Test.cs" />
     <Compile Include="Assets\Scripts\MapEditor\MapInfoEditor.cs" />
     <Compile Include="Assets\Scripts\Gameplay\GameLimiter.cs" />
     <Compile Include="Assets\Scripts\MapEditor\EditorJudgementHolder.cs" />
@@ -297,9 +297,6 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.11f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets\Plugins\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.11f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

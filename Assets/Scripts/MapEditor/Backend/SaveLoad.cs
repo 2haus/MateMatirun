@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using Newtonsoft.Json;
 using UnityEngine;
 
 namespace MMBackend.MapEditor
@@ -41,7 +40,7 @@ namespace MMBackend.MapEditor
             DirectoryCheck(file);
 
             StreamWriter writer = new StreamWriter(File.Open(file, FileMode.Create));
-            writer.WriteLine(JsonConvert.SerializeObject(map));
+            writer.WriteLine(JsonUtility.ToJson(map));
             writer.Close();
 
             return 0;
@@ -61,7 +60,7 @@ namespace MMBackend.MapEditor
             else file = appPath + "/" + path;
 
             StreamReader reader = new StreamReader(File.Open(file, FileMode.Open));
-            Map open = JsonConvert.DeserializeObject<Map>(reader.ReadToEnd());
+            Map open = JsonUtility.FromJson<Map>(reader.ReadToEnd());
             reader.Close();
 
             return open;

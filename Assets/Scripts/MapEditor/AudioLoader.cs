@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Newtonsoft.Json;
 
 namespace MMBackend.MapEditor
 {
@@ -27,7 +26,7 @@ namespace MMBackend.MapEditor
 
             // comment here afterwards after test
             /*
-            map = JsonConvert.DeserializeObject<Map>(Resources.Load<TextAsset>("1").ToString());
+            map = JsonUtility.FromJson<Map>(Resources.Load<TextAsset>("1").ToString());
             Debug.Log("Default loaded: " + map.artist + " - " + map.title);
 
             var clip = Resources.Load<AudioClip>("Songs/" + map.songPath);

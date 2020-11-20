@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-using Newtonsoft.Json;
+using UnityEngine;
 
 namespace MMBackend
 {
@@ -16,7 +16,7 @@ namespace MMBackend
         public static Map LoadMap(string path)
         {
             StreamReader read = new StreamReader(File.Open(path, FileMode.Open));
-            Map open = JsonConvert.DeserializeObject<Map>(read.ReadToEnd());
+            Map open = JsonUtility.FromJson<Map>(read.ReadToEnd());
             read.Close();
 
             return open;
@@ -31,7 +31,7 @@ namespace MMBackend
         public static Map LoadMapFromAssets(string path)
         {
             StreamReader read = new StreamReader(File.Open("Assets/" + path, FileMode.Open));
-            Map open = JsonConvert.DeserializeObject<Map>(read.ReadToEnd());
+            Map open = JsonUtility.FromJson<Map>(read.ReadToEnd());
             read.Close();
 
             return open;
@@ -51,7 +51,7 @@ namespace MMBackend
             if (!path.EndsWith(".json")) return 1;
 
             StreamWriter write = new StreamWriter(File.Open(path, FileMode.Create));
-            write.WriteLine(JsonConvert.SerializeObject(map));
+            write.WriteLine(JsonUtility.ToJson(map));
             write.Close();
 
             return 0;
@@ -71,7 +71,7 @@ namespace MMBackend
             if (!path.EndsWith(".json")) return 1;
 
             StreamWriter write = new StreamWriter(File.Open("Assets/" + path, FileMode.Create));
-            write.WriteLine(JsonConvert.SerializeObject(map));
+            write.WriteLine(JsonUtility.ToJson(map));
             write.Close();
 
             return 0;
