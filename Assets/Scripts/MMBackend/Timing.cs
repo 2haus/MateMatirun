@@ -20,6 +20,7 @@
         public float time { get; set; }
         public float x { get; set; }
         public NoteTypes type { get; set; }
+        public bool regenerate { get; set; }
 
         public Timing() { }
 
@@ -30,11 +31,12 @@
         /// <param name="time">Object timing in seconds.</param>
         /// <param name="x">Position of the timing in Transform, starting from first timer.</param>
         /// <param name="type">Type of the object in NoteTypes type.</param>
-        public Timing(float time, float x, NoteTypes type)
+        public Timing(float time, float x, NoteTypes type, bool regenerate = true)
         {
             this.time = time;
             this.x = x;
             this.type = type;
+            this.regenerate = regenerate;
         }
     }
 
