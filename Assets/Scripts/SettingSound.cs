@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class SettingSound : MonoBehaviour
 {
+    public SettingsStore store;
     public Button volUp, volDown;
     Text sfx;
     float volume;
-    bool update;
 
     void Start()
     {
@@ -18,16 +18,15 @@ public class SettingSound : MonoBehaviour
         volDown.onClick.AddListener(VolDown);
 
         // get sfx from playerprefs later
-        volume = 0.75f;
+        // volume = 0.75f;
     }
 
-    void Update()
+    void UpdateData()
     {
-        if(update)
-        {
-            sfx.text = (volume * 100).ToString() + "%";
-            update = false;
-        }
+        sfx = GetComponent<Text>();
+
+        sfx.text = (volume * 100).ToString() + "%";
+        store.UpdateSound(volume);
     }
 
     void VolUp()
@@ -35,7 +34,7 @@ public class SettingSound : MonoBehaviour
         if(volume < 1f)
         {
             volume += 0.25f;
-            update = true;
+            UpdateData();
         }
     }
 
@@ -44,7 +43,13 @@ public class SettingSound : MonoBehaviour
         if (volume > 0f)
         {
             volume -= 0.25f;
-            update = true;
+            UpdateData();
         }
+    }
+
+    public void SetSound(float target)
+    {
+        volume = target;
+        UpdateData();
     }
 }

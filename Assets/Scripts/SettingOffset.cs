@@ -5,10 +5,11 @@ using UnityEngine.UI;
 
 public class SettingOffset : MonoBehaviour
 {
+    public SettingsStore store;
     public Button offsetUp, offsetDown;
+
     Text offset;
     int set;
-    bool update;
 
     void Start()
     {
@@ -21,21 +22,20 @@ public class SettingOffset : MonoBehaviour
         set = 0;
     }
 
-    void Update()
+    void UpdateData()
     {
-        if(update)
-        {
-            offset.text = set.ToString() + "ms";
-            update = false;
-        }
+        offset = GetComponent<Text>();
+
+        offset.text = set.ToString() + "ms";
+        store.UpdateOffset(set);
     }
 
     void OffsetUp()
     {
-        if(set < 50)
+        if (set < 50)
         {
             set++;
-            update = true;
+            UpdateData();
         }
     }
 
@@ -44,7 +44,13 @@ public class SettingOffset : MonoBehaviour
         if (set > -50)
         {
             set--;
-            update = true;
+            UpdateData();
         }
+    }
+
+    public void SetOffset(int target)
+    {
+        set = target;
+        UpdateData();
     }
 }

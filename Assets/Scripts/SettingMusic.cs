@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class SettingMusic : MonoBehaviour
 {
+    public SettingsStore store;
     public Button volUp, volDown;
     Text music;
     float volume;
-    bool update;
 
     void Start()
     {
@@ -18,24 +18,23 @@ public class SettingMusic : MonoBehaviour
         volDown.onClick.AddListener(VolDown);
 
         // get music from playerprefs later
-        volume = 1f;
+        // volume = 1f;
     }
 
-    void Update()
+    void UpdateData()
     {
-        if(update)
-        {
-            music.text = (volume * 100).ToString() + "%";
-            update = false;
-        }
+        music = GetComponent<Text>();
+
+        music.text = (volume * 100).ToString() + "%";
+        store.UpdateMusic(volume);
     }
 
     void VolUp()
     {
-        if(volume < 1f)
+        if (volume < 1f)
         {
             volume += 0.25f;
-            update = true;
+            UpdateData();
         }
     }
 
@@ -44,7 +43,13 @@ public class SettingMusic : MonoBehaviour
         if (volume > 0f)
         {
             volume -= 0.25f;
-            update = true;
+            UpdateData();
         }
+    }
+
+    public void SetMusic(float target)
+    {
+        volume = target;
+        UpdateData();
     }
 }

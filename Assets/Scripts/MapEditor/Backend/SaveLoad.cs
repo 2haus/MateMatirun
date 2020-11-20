@@ -10,7 +10,7 @@ namespace MMBackend.MapEditor
     /// </summary>
     public class SaveLoad
     {
-        static string appPath = Application.dataPath;
+        static string appPath = Application.persistentDataPath;
 
         /// <summary>
         /// Checks if the directory exists, and create the directory if not exists.
