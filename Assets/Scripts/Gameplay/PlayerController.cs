@@ -18,13 +18,16 @@ public class PlayerController : MonoBehaviour
 
         // Delete the note
         GameObject note = GameObject.Find("Note");
-        Destroy(note);
+        note.GetComponent<NoteLogic>().Kill();
+        note.tag = "Untagged";
     }
 
     void Miss()
     {
         notePos++;
         control.scoreType.text = "Miss";
+        GameObject note = GameObject.Find("Note");
+        note.name = "Note(Missed)";
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -33,7 +36,6 @@ public class PlayerController : MonoBehaviour
         {
             Miss();
             control.limiter--;
-            Destroy(other.gameObject);
         }
     }
 }

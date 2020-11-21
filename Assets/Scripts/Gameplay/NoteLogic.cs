@@ -6,29 +6,32 @@ using UnityEngine.UIElements;
 
 public class NoteLogic : MonoBehaviour
 {
+    public EnemyController enemyController;
+
     public int noteID;
 
     public float time;
     Vector2 startPosition;
     Vector2 targetPosition;
-    public AudioSource sfx;
-    bool once = true;
+
+    public bool status;
 
     private void Start()
     {
+        status = true;
         startPosition = transform.position;
-        targetPosition = new Vector2(-7.3f, -3);
+        targetPosition = new Vector2(-8.4f, transform.position.y);
 
         time *= 2;
 
         StartCoroutine(Lerp());
     }
 
-    private void Update()
+    void Update()
     {
-        if (transform.position.x <= -0.65f && once)
+        if (gameObject.name == "Note(Missed)" && transform.position.x <= -8f)
         {
-            once = false;
+            Destroy(gameObject);
         }
     }
 
@@ -36,13 +39,24 @@ public class NoteLogic : MonoBehaviour
     {
         float timeElapsed = 0;
 
-        while (timeElapsed < time)
+        while (timeElapsed < time && status)
         {
             transform.position = Vector2.Lerp(startPosition, targetPosition, timeElapsed / time);
             timeElapsed += Time.deltaTime;
 
             yield return null;
         }
-        transform.position = targetPosition;
+        if (status)
+        {
+            transform.position = targetPosition;
+        }
     }
+
+    public void Kill()
+    {
+        gameObject.tag = "Untagged";
+        enemyController.enemyAnimation.SetTrigger("Die");
+    }
+
+    public void Destroy() { Destroy(gameObject);  }
 }
