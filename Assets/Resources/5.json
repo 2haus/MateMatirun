@@ -69,7 +69,7 @@
          "time": 6.909,
          "x": 1.0,
          "type": 1,
-         "regenerate": true
+         "regenerate": false
       },
       {
          "time": 7.557,
@@ -129,7 +129,7 @@
          "time": 12.746,
          "x": 1.0,
          "type": 1,
-         "regenerate": true
+         "regenerate": false
       },
       {
          "time": 13.395,
@@ -279,7 +279,7 @@
          "time": 26.206,
          "x": 1.0,
          "type": 1,
-         "regenerate": true
+         "regenerate": false
       },
       {
          "time": 26.692,
@@ -429,7 +429,7 @@
          "time": 39.017,
          "x": 1.0,
          "type": 1,
-         "regenerate": true
+         "regenerate": false
       },
       {
          "time": 39.341,
@@ -915,7 +915,7 @@
          "time":4.501315,
          "x":11.2500248,
          "type":1,
-         "regenerate": true
+         "regenerate": false
       }
     ],
     "songPath":"Maya & Erika - Anime o Katare!~Animegatari Dokokai no Theme~"
