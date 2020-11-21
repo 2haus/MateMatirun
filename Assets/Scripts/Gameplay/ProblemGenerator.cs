@@ -5,6 +5,8 @@ using UnityEngine;
 public class ProblemGenerator : MonoBehaviour
 {
     public int operation;
+
+    // Game internal difficulty
     int min = 0;
     int max = 9;
 
@@ -88,6 +90,7 @@ public class ProblemGenerator : MonoBehaviour
                 // To make sure the generated incorrect answer will not be the same
                 if (!choices.Contains(number))
                 {
+                    // Set the number to x-choices
                     choices[i] = number;
                     break;
                 }
