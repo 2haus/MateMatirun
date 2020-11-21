@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1384379179835424309}
-  - component: {fileID: 7113794932274756182}
   - component: {fileID: 954252027045491759}
   - component: {fileID: 526007917263475516}
   - component: {fileID: 1412458667679212157}
+  - component: {fileID: 7113794932274756182}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Note
@@ -35,21 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7113794932274756182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1384379179835424306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40e0ada0f8c67a9439a3596ebee5eb8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noteID: 0
-  time: 0
-  sfx: {fileID: 954252027045491759}
 --- !u!82 &954252027045491759
 AudioSource:
   m_ObjectHideFlags: 0
@@ -193,6 +178,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &7113794932274756182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384379179835424306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e0ada0f8c67a9439a3596ebee5eb8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyController: {fileID: 2980864615250333321}
+  noteID: 0
+  time: 0
+  status: 0
 --- !u!1 &1384379181775496125
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,6 +205,7 @@ GameObject:
   - component: {fileID: 1384379181775496127}
   - component: {fileID: 1384379181775496124}
   - component: {fileID: 1384379181775496126}
+  - component: {fileID: 2980864615250333321}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Untagged
@@ -219,7 +221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384379181775496125}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.284, z: 0}
+  m_LocalPosition: {x: 0, y: -0.25, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 1384379179835424309}
@@ -295,3 +297,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2980864615250333321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384379181775496125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4c8d8ac96b33045b8c51870a85edca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyAnimation: {fileID: 1384379181775496126}
+  logic: {fileID: 7113794932274756182}
