@@ -806,7 +806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84748afa969a61c44bf91550f73fd37a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfx: {fileID: 1938296993}
+  audioManager: {fileID: 651492779}
   map: {fileID: 651492776}
   score: {fileID: 651492780}
   judge: {fileID: 1064285850}
@@ -829,6 +829,9 @@ MonoBehaviour:
   setting: {fileID: 0}
   music: {fileID: 651492781}
   sfx: {fileID: 651492777}
+  musicMixer: {fileID: -5942707940296946330, guid: 5c2e76fe40eeeb443ba1343f61e11c59, type: 2}
+  sfxMixer: {fileID: 8823620794736170526, guid: 5c2e76fe40eeeb443ba1343f61e11c59, type: 2}
+  masterMixer: {fileID: 24100000, guid: 5c2e76fe40eeeb443ba1343f61e11c59, type: 2}
   universalOffset: 0
 --- !u!114 &651492780
 MonoBehaviour:
@@ -853,7 +856,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5942707940296946330, guid: 5c2e76fe40eeeb443ba1343f61e11c59, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

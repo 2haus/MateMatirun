@@ -13,7 +13,6 @@ public class MusicCore : MonoBehaviour
     public ProblemGenerator generator;
 
     // Song Selection Script call this method with Song class, apply all info to this variable.
-    AudioSource music;
     string songArtist;
     string songTitle;
     [SerializeField]
@@ -209,7 +208,6 @@ public class MusicCore : MonoBehaviour
         generator.Initialization(2);
 
         audioManager.Initialized(map);
-        music = audioManager.music;
         secPerBeat = 60f / songBPM;
 
         // Calculate timeGap (speed)
@@ -223,7 +221,7 @@ public class MusicCore : MonoBehaviour
 
     public void GameStart()
     {
-        music.Play();
+        audioManager.musicPlay();
         universalOffset = 0;
         dspSongTime = (float)AudioSettings.dspTime;
         lastDspTime = dspSongTime;
@@ -234,7 +232,7 @@ public class MusicCore : MonoBehaviour
     {
         float timePressed = songPosition;
         float compare = Mathf.Abs(timePressed - (float)judgementTime[note].time);
-        Debug.Log(timePressed - (float)judgementTime[note].time);
+        //Debug.Log(timePressed - (float)judgementTime[note].time);
 
         return compare;
     }

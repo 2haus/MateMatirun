@@ -9,7 +9,7 @@
          "time": 1.071,
          "x": 1.0,
          "type": 1,
-         "regenerate": false
+         "regenerate": true
       },
       {
          "time": 1.719,
@@ -69,7 +69,7 @@
          "time": 6.909,
          "x": 1.0,
          "type": 1,
-         "regenerate": false
+         "regenerate": true
       },
       {
          "time": 7.557,
@@ -129,7 +129,7 @@
          "time": 12.746,
          "x": 1.0,
          "type": 1,
-         "regenerate": false
+         "regenerate": true
       },
       {
          "time": 13.395,
@@ -279,7 +279,7 @@
          "time": 26.206,
          "x": 1.0,
          "type": 1,
-         "regenerate": false
+         "regenerate": true
       },
       {
          "time": 26.692,
@@ -429,7 +429,7 @@
          "time": 39.017,
          "x": 1.0,
          "type": 1,
-         "regenerate": false
+         "regenerate": true
       },
       {
          "time": 39.341,

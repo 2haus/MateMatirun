@@ -7,7 +7,8 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    public AudioSource sfx;
+    public AudioManager audioManager;
+
     public MusicCore map;
     public MusicScoring score;
     public MusicJudgement judge;
@@ -30,7 +31,7 @@ public class GameController : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown("z") || Input.GetKeyDown("x")) {
-            sfx.Play();
+            audioManager.sfxPlay();
             playerAnimation.PlayAnimation(PlayerAnimation.AnimationType.Attack);
 
             // Check judgement
