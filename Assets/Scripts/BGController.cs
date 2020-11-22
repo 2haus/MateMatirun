@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ground : MonoBehaviour
+public class BGController : MonoBehaviour
 {
     SpriteRenderer spriteRenderer;
     public Sprite[] Sprites;
@@ -13,8 +13,7 @@ public class Ground : MonoBehaviour
     void Start()
     {
         spriteRenderer = this.GetComponent<SpriteRenderer>();
-        Spawner = GameObject.Find("GroundSpawner").GetComponent<Spawner>();
-        Randomize();
+        Spawner = GameObject.Find("BackgroundSpawner").GetComponent<Spawner>();
 
         universalSpeed = GameObject.Find("GameManager");
     }
@@ -23,18 +22,9 @@ public class Ground : MonoBehaviour
         speed = universalSpeed.GetComponent<GameController>().environmentSpeedControl;
         transform.Translate(Vector3.left * speed);
     }
-
-    public void Randomize(){
-        int choice;
-
-        choice = Random.Range(0, Sprites.Length);
-
-        spriteRenderer.sprite = Sprites[choice];
-    }
-
     private void OnCollisionEnter2D(Collision2D collision){
         //Debug.Log(collision.gameObject.name);
-        if(collision.gameObject.name == "Destroyer"){
+        if(collision.gameObject.name == "BackgroundDestroyer"){
             Destroy(this.gameObject);
             Spawner.SpawnGround();
         }

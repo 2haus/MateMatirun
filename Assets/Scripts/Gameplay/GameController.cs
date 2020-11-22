@@ -20,9 +20,12 @@ public class GameController : MonoBehaviour
 
     public Text scoreType;
 
+    public float environmentSpeedControl;
+
     private void Start()
     {
         limiter = 0;
+        environmentSpeedControl = 0.035f;
 
         // Start running in the '90s
         playerAnimation.PlayAnimation(PlayerAnimation.AnimationType.Run);
@@ -33,6 +36,8 @@ public class GameController : MonoBehaviour
         if (Input.GetKeyDown("z") || Input.GetKeyDown("x")) {
             audioManager.sfxPlay();
             playerAnimation.PlayAnimation(PlayerAnimation.AnimationType.Attack);
+
+            environmentSpeedControl = 0f;
 
             // Check judgement
             if (limiter > 0)
