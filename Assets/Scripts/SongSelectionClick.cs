@@ -10,6 +10,8 @@ public class SongSelectionClick : MonoBehaviour
     public int index;
     Vector3 position;
 
+    bool enableClick;
+
     void Start()
     {
         position = art.localPosition;
@@ -24,6 +26,12 @@ public class SongSelectionClick : MonoBehaviour
     public void MoveUp()
     {
         art.localPosition = new Vector3(position.x, position.y, position.z);
-        navigation.Select(index);
+
+        if(enableClick) navigation.Select(index);
+    }
+
+    public void ToggleClick(bool target)
+    {
+        enableClick = target;
     }
 }
