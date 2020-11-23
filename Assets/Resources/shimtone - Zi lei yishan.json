@@ -1,0 +1,1042 @@
+{
+    "id":1,
+    "title":"Zi lei yishan",
+    "artist":"shimtone",
+    "bpm":170,
+    "preview":1029235,
+    "timings":[
+        {
+            "time": 10.582,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 10.935,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 11.288,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 11.641,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 11.994,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 12.347,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 12.700,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 13.053,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 13.405,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 13.758,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 14.111,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 14.464,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 14.817,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 15.170,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 15.524,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 15.877,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 16.230,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 16.583,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 16.936,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 17.289,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 17.642,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 17.994,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 18.347,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 18.700,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 19.053,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 19.406,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 19.759,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 20.112,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 20.465,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 20.818,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 21.171,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 21.524,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 21.877,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 22.583,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 22.936,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 23.289,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 23.642,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 23.994,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 24.347,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 24.700,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 25.053,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 25.406,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 25.759,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 26.112,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 26.465,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 26.818,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 27.171,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 27.524,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 27.877,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 28.230,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 28.583,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 28.936,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 29.289,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 29.642,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 29.994,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 30.347,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 30.700,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 31.053,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 31.406,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 31.759,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 32.112,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 32.465,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 32.818,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 33.171,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 33.524,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 33.877,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 35.289,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 36.700,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 38.112,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 39.524,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 40.936,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 42.347,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 43.759,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 45.171,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 46.583,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 47.994,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 49.406,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 50.112,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 50.818,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 52.230,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 53.642,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 55.053,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 55.759,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 56.465,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 56.818,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 57.171,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 57.524,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 57.877,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 58.230,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 58.583,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 58.936,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 59.289,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 59.642,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 59.994,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 60.347,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 60.700,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 61.053,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 61.406,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 61.759,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 62.112,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 62.465,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 62.818,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 63.171,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 63.524,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 63.877,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 64.230,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 64.583,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 64.936,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 65.289,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 65.642,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 65.994,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 66.347,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 66.700,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 67.053,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 67.406,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 67.759,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 68.112,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 68.465,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 68.818,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 69.171,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 69.524,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 69.877,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 70.230,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 70.583,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 70.936,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 71.289,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 71.642,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 71.994,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 72.347,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 72.700,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 73.053,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 73.406,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 73.759,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 74.112,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 74.465,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 74.818,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 75.171,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 75.524,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 75.877,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 76.230,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 76.583,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 76.936,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 77.289,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 77.642,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 77.994,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 78.347,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 78.700,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 79.053,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 79.759,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 80.112,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 80.465,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 81.171,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 81.877,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 82.583,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 82.936,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 83.289,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 83.994,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 84.347,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 84.700,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 85.406,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 85.759,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 86.112,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 86.818,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 87.171,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 87.524,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 88.230,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 88.583,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 88.936,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 89.642,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 89.818,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 89.994,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 90.171,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        }
+    ],
+    "songPath":"shimtone - Zi lei yishan"
+ }

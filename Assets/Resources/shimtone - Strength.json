@@ -1,0 +1,448 @@
+{
+    "id":1,
+    "title":"Strength",
+    "artist":"shimtone",
+    "bpm":198,
+    "preview":1029235,
+    "timings":[
+        {
+            "time": 2.405,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 3.617,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 4.829,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 5.435,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 6.041,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 7.253,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 7.859,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 8.465,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 9.677,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 10.889,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 12.102,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 13.314,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 14.526,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 15.738,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 16.950,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 18.162,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 19.374,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 20.586,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 21.798,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 23.011,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 24.223,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 25.435,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 26.647,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 27.859,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 28.465,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 29.071,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 30.283,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 31.495,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 32.708,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 33.920,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 35.132,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 36.344,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 37.556,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 38.162,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 38.768,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 39.374,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 39.980,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 41.192,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 42.405,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 43.617,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 44.829,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 45.435,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 46.041,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 46.647,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 47.253,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 48.465,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 49.677,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 50.889,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 51.495,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 52.102,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 53.314,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 54.526,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 55.738,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 56.950,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 57.556,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 58.162,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 59.374,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 60.586,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 61.798,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 63.011,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 64.223,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 65.435,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 66.647,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 67.253,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 67.859,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 69.071,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 70.283,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 71.495,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 72.708,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 73.920,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 75.132,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 76.344,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 77.556,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        }
+    ],
+    "songPath":"shimtone - Strength"
+ }

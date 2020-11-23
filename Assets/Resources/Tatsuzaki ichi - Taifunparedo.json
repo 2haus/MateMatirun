@@ -1,0 +1,988 @@
+{
+    "id":1,
+    "title":"Taifunparedo",
+    "artist":"Tatsuzaki ichi",
+    "bpm":160,
+    "preview":1029235,
+    "timings":[
+        {
+            "time": 1.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 2.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 3.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 4.094,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 4.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 5.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 7.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 7.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 8.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 8.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 8.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 10.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 10.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 11.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 11.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 11.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 12.344,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 12.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 13.094,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 13.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 14.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 14.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 14.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 16.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 16.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 17.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 17.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 17.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 19.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 19.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 20.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 20.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 20.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 22.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 22.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 23.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 23.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 23.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 24.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 25.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 26.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 28.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 29.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 30.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 31.094,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 31.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 32.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 33.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 34.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 35.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 36.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 37.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 37.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 38.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 38.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 38.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 39.344,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 39.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 40.094,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 40.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 40.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 41.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 41.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 41.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 43.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 43.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 44.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 44.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 44.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 45.344,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 45.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 46.094,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 46.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 46.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 47.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 47.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 47.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 49.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 50.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 50.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 51.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 52.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 53.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 54.344,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 54.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 55.094,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 55.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 55.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 56.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 56.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 56.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 57.344,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 57.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 58.094,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 58.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 58.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 59.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 59.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 59.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 60.344,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 60.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 61.094,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 61.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 62.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 62.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 63.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 64.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 64.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 65.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 65.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 65.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 66.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 67.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 67.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 68.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 68.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 68.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 69.344,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 69.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 70.094,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 70.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 70.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 71.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 71.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 71.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 72.344,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 72.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 73.094,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 73.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 74.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 74.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 75.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 76.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 76.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 77.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 77.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 77.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 78.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 79.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 80.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 82.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 83.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 85.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 85.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 86.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 86.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 86.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 87.344,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 87.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 88.094,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 88.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 88.844,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 89.219,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 89.594,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 89.969,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 90.344,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 90.719,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 91.094,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 91.469,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 93.157,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 93.250,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 93.344,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        },
+        {
+            "time": 93.438,
+            "x": 1.0,
+            "type": 1,
+            "regenerate": false
+        }
+    ],
+    "songPath":"Tatsuzaki ichi - Taifunparedo"
+ }
