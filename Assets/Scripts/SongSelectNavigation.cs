@@ -13,6 +13,7 @@ public class SongSelectNavigation : MonoBehaviour
 
     int active;
     bool animate;
+    bool unselect;
     float time;
 
     void Start()
@@ -37,7 +38,7 @@ public class SongSelectNavigation : MonoBehaviour
 
     void DifficultySelect()
     {
-        screenTargetter.anchoredPosition = new Vector2(0f, -1280f);
+        screenTargetter.anchoredPosition = new Vector2(0f, -(Screen.height * 720f / Screen.width) - 1f);
         difficultyTargetter.anchoredPosition = new Vector2(0f, 0f);
         iTween.MoveTo(screen.gameObject, screenTargetter.transform.position, 1.5f);
         iTween.MoveTo(difficultyScreen.gameObject, difficultyTargetter.transform.position, 1.5f);
@@ -50,13 +51,25 @@ public class SongSelectNavigation : MonoBehaviour
         if(!animate)
         {
             if (index == active) DifficultySelect();
-            else
-            {
-                songTargetter.anchoredPosition = new Vector2(index * -480f, songTargetter.anchoredPosition.y);
-                iTween.MoveTo(songHolder.gameObject, songTargetter.transform.position, 1.5f);
-                active = index;
-                animate = true;
-            }
+            else Snap(index);
         }
+    }
+
+    public void Snap(int index)
+    {
+        songTargetter.anchoredPosition = new Vector2(index * -480f, songTargetter.anchoredPosition.y);
+        iTween.MoveTo(songHolder.gameObject, songTargetter.transform.position, 1.5f);
+        active = index;
+        animate = true;
+    }
+
+    public void ToggleAnimate(bool target)
+    {
+        animate = target;
+    }
+
+    public void ToggleSelection(bool target)
+    {
+        unselect = target;
     }
 }

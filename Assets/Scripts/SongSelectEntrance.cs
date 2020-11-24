@@ -5,8 +5,11 @@ using UnityEngine.UI;
 
 public class SongSelectEntrance : MonoBehaviour
 {
+    public SongSelectNavigation navigation;
+    public Transform screenTargetter;
     RectTransform screenPanel;
-    float speed;
+    // float speed;
+    float time;
     bool animate;
 
     void Start()
@@ -14,14 +17,18 @@ public class SongSelectEntrance : MonoBehaviour
         screenPanel = GetComponent<RectTransform>();
         screenPanel.anchoredPosition = new Vector3(720f, 0);
         animate = true;
-        speed = 1000f;
+        navigation.ToggleAnimate(true);
+
+        iTween.MoveTo(gameObject, screenTargetter.transform.position, 2f);
+        // speed = 1000f;
     }
 
 
     void Update()
     {
-        if(animate == true)
+        if(animate)
         {
+            /*
             transform.Translate(Vector2.left * speed * Time.deltaTime);
             if(screenPanel.anchoredPosition.x < 360f) // interpolate speed after halfway
             {
@@ -32,7 +39,16 @@ public class SongSelectEntrance : MonoBehaviour
             if (screenPanel.anchoredPosition.x <= 0)
             {
                 animate = false;
+                navigation.ToggleAnimate(false);
                 screenPanel.anchoredPosition = new Vector3(0, 0); // just to make sure
+            }
+            */
+            time += Time.deltaTime;
+            if(time >= 2f)
+            {
+                animate = false;
+                navigation.ToggleAnimate(false);
+                time = 0f;
             }
         }
     }

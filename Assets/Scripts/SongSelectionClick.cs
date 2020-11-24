@@ -15,6 +15,7 @@ public class SongSelectionClick : MonoBehaviour
     void Start()
     {
         position = art.localPosition;
+        enableClick = false;
     }
 
 

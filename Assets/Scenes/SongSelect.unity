@@ -214,7 +214,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25310825}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
   m_Name: 
@@ -237,6 +237,8 @@ GameObject:
   m_Component:
   - component: {fileID: 32262136}
   - component: {fileID: 32262137}
+  - component: {fileID: 32262138}
+  - component: {fileID: 32262139}
   m_Layer: 5
   m_Name: DifficultyScreen
   m_TagString: Untagged
@@ -275,6 +277,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32262135}
   m_CullTransparentMesh: 0
+--- !u!114 &32262138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32262135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45df971c95c597a4b8f3b30f33eb1a17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &32262139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32262135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc303ec97540424aa16046e3b4404be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &74570071
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,6 +1020,7 @@ GameObject:
   - component: {fileID: 859492879}
   - component: {fileID: 859492880}
   - component: {fileID: 859492881}
+  - component: {fileID: 859492882}
   m_Layer: 5
   m_Name: Screen
   m_TagString: Untagged
@@ -1020,7 +1047,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 721, y: 1280}
+  m_SizeDelta: {x: 720, y: 1280}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &859492878
 CanvasRenderer:
@@ -1042,6 +1069,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 399ed8348e8315a4bbfc11e995d479fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  navigation: {fileID: 859492880}
+  screenTargetter: {fileID: 74570072}
 --- !u!114 &859492880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1076,6 +1105,19 @@ MonoBehaviour:
   click:
   - {fileID: 1127732485}
   - {fileID: 1880111858}
+  navigation: {fileID: 859492880}
+--- !u!114 &859492882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859492876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45df971c95c597a4b8f3b30f33eb1a17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &936783349
 PrefabInstance:
   m_ObjectHideFlags: 0
