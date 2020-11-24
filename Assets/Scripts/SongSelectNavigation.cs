@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SongSelectNavigation : MonoBehaviour
 {
@@ -11,9 +13,11 @@ public class SongSelectNavigation : MonoBehaviour
     public RectTransform difficultyScreen;
     public RectTransform difficultyTargetter;
 
+    public Button songSelectBack;
+    public Button difficultyBack;
+
     int active;
     bool animate;
-    bool unselect;
     float time;
 
     void Start()
@@ -21,6 +25,9 @@ public class SongSelectNavigation : MonoBehaviour
         active = 0;
         animate = false;
         time = 0f;
+
+        songSelectBack.onClick.AddListener(BackToMainMenu);
+        difficultyBack.onClick.AddListener(BackToSongSelect);
     }
 
     void Update()
@@ -36,10 +43,25 @@ public class SongSelectNavigation : MonoBehaviour
         }
     }
 
+    void BackToSongSelect()
+    {
+        screenTargetter.anchoredPosition = Vector2.zero;
+        difficultyTargetter.anchoredPosition = new Vector2(0f, (Screen.height * 720f / Screen.width) - 1f);
+        iTween.MoveTo(screen.gameObject, screenTargetter.transform.position, 1.5f);
+        iTween.MoveTo(difficultyScreen.gameObject, difficultyTargetter.transform.position, 1.5f);
+
+        animate = true;
+    }
+
+    void BackToMainMenu()
+    {
+        SceneManager.LoadScene("Main");
+    }
+
     void DifficultySelect()
     {
         screenTargetter.anchoredPosition = new Vector2(0f, -(Screen.height * 720f / Screen.width) - 1f);
-        difficultyTargetter.anchoredPosition = new Vector2(0f, 0f);
+        difficultyTargetter.anchoredPosition = Vector2.zero;
         iTween.MoveTo(screen.gameObject, screenTargetter.transform.position, 1.5f);
         iTween.MoveTo(difficultyScreen.gameObject, difficultyTargetter.transform.position, 1.5f);
 
@@ -66,10 +88,5 @@ public class SongSelectNavigation : MonoBehaviour
     public void ToggleAnimate(bool target)
     {
         animate = target;
-    }
-
-    public void ToggleSelection(bool target)
-    {
-        unselect = target;
     }
 }
