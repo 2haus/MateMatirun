@@ -30,9 +30,9 @@ public class SongListScroller : MonoBehaviour
             float x = songList.anchoredPosition.x;
 
             int index;
-            if (x > 0f) index = (int)(Mathf.Abs(x - 285f) / 500f);
+            if (x < 0f) index = (int)(Mathf.Abs(x - 285f) / 500f);
             else index = 0;
-            // Debug.Log($"{x}, {index}");
+            Debug.Log($"{x}, {index}");
             if (!scrolling) navigation.Select(index);
             else navigation.Snap(index);
             scrolling = false;

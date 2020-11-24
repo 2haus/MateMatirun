@@ -18,6 +18,7 @@ public class SongSelectNavigation : MonoBehaviour
 
     int active;
     bool animate;
+    float animateTime;
     float time;
 
     void Start()
@@ -45,16 +46,22 @@ public class SongSelectNavigation : MonoBehaviour
 
     void BackToSongSelect()
     {
+        if (animate) return;
+
         screenTargetter.anchoredPosition = Vector2.zero;
         difficultyTargetter.anchoredPosition = new Vector2(0f, (Screen.height * 720f / Screen.width) - 1f);
-        iTween.MoveTo(screen.gameObject, screenTargetter.transform.position, 1.5f);
-        iTween.MoveTo(difficultyScreen.gameObject, difficultyTargetter.transform.position, 1.5f);
+
+        animateTime = 1.5f;
+        iTween.MoveTo(screen.gameObject, screenTargetter.transform.position, animateTime);
+        iTween.MoveTo(difficultyScreen.gameObject, difficultyTargetter.transform.position, animateTime);
 
         animate = true;
     }
 
     void BackToMainMenu()
     {
+        if (animate) return;
+
         SceneManager.LoadScene("Main");
     }
 
@@ -62,27 +69,33 @@ public class SongSelectNavigation : MonoBehaviour
     {
         screenTargetter.anchoredPosition = new Vector2(0f, -(Screen.height * 720f / Screen.width) - 1f);
         difficultyTargetter.anchoredPosition = Vector2.zero;
-        iTween.MoveTo(screen.gameObject, screenTargetter.transform.position, 1.5f);
-        iTween.MoveTo(difficultyScreen.gameObject, difficultyTargetter.transform.position, 1.5f);
+
+        animateTime = 1.5f;
+        iTween.MoveTo(screen.gameObject, screenTargetter.transform.position, animateTime);
+        iTween.MoveTo(difficultyScreen.gameObject, difficultyTargetter.transform.position, animateTime);
 
         animate = true;
-    }
-
-    public void Select(int index)
-    {
-        if(!animate)
-        {
-            if (index == active) DifficultySelect();
-            else Snap(index);
-        }
     }
 
     public void Snap(int index)
     {
         songTargetter.anchoredPosition = new Vector2(index * -480f, songTargetter.anchoredPosition.y);
-        iTween.MoveTo(songHolder.gameObject, songTargetter.transform.position, 1.5f);
+        float delta = Mathf.Abs(screen.anchoredPosition.x - songTargetter.anchoredPosition.x);
+        if (delta > 225f) animateTime = 1.25f;
+        else animateTime = 1.25f + (delta / 25f);
+
+        iTween.MoveTo(songHolder.gameObject, songTargetter.transform.position, animateTime);
         active = index;
         animate = true;
+    }
+
+    public void Select(int index)
+    {
+        if (!animate)
+        {
+            if (index == active) DifficultySelect();
+            else Snap(index);
+        }
     }
 
     public void ToggleAnimate(bool target)
