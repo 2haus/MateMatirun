@@ -56,4 +56,9 @@ public class SongListScroller : MonoBehaviour
     {
         this.index = index;
     }
+
+    public void DirectClick(int index)
+    {
+        navigation.Select(index);
+    }
 }
