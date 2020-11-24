@@ -11,6 +11,8 @@ public class SongListScroller : MonoBehaviour
     bool active;
     bool scrolling;
 
+    int index;
+
     void Update()
     {
         if (Input.touchCount > 0)
@@ -29,17 +31,29 @@ public class SongListScroller : MonoBehaviour
             // int index = (int)(Mathf.Abs(songList.anchoredPosition.x) - 240) / 480;
             float x = songList.anchoredPosition.x;
 
-            int index;
-            if (x < 0f) index = (int)(Mathf.Abs(x - 285f) / 500f);
-            else index = 0;
-            Debug.Log($"{x}, {index}");
-            if (!scrolling) navigation.Select(index);
-            else navigation.Snap(index);
+            if (!scrolling)
+            {
+                Debug.Log($"not scrolling. selecting item {index}");
+                navigation.Select(index);
+            }
+            else
+            {
+                int target;
+                if (x < 0f) target = (int)(Mathf.Abs(x - 285f) / 500f);
+                else target = 0;
+                // Debug.Log($"{x}, {index}");
+                navigation.Snap(target);
+            }
             scrolling = false;
 
             active = false;
 
             foreach (SongSelectionClick temp in click) temp.ToggleClick(true);
         }
+    }
+
+    public void ButtonTapped(int index)
+    {
+        this.index = index;
     }
 }

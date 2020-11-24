@@ -2722,6 +2722,10 @@ PrefabInstance:
       propertyPath: index
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 310784084469206310, guid: 84179f16f4c9cd643935938ffbfdca6a, type: 3}
+      propertyPath: scroller
+      value: 
+      objectReference: {fileID: 859492881}
     - target: {fileID: 7080013660328183412, guid: 84179f16f4c9cd643935938ffbfdca6a, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2908,6 +2912,10 @@ PrefabInstance:
       propertyPath: navigation
       value: 
       objectReference: {fileID: 859492880}
+    - target: {fileID: 310784084469206310, guid: 84179f16f4c9cd643935938ffbfdca6a, type: 3}
+      propertyPath: scroller
+      value: 
+      objectReference: {fileID: 859492881}
     - target: {fileID: 7080013660976274690, guid: 84179f16f4c9cd643935938ffbfdca6a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

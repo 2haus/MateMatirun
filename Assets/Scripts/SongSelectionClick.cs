@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SongSelectionClick : MonoBehaviour
 {
-    public SongSelectNavigation navigation;
+    public SongListScroller scroller;
     public RectTransform art;
     public int index;
     Vector3 position;
@@ -18,17 +18,21 @@ public class SongSelectionClick : MonoBehaviour
         enableClick = false;
     }
 
+    public void OnMouseUp()
+    {
+        Debug.Log("click");
+    }
 
     public void MoveDown()
     {
         art.localPosition = new Vector3(position.x, position.y - 4f, position.z);
+
+        scroller.ButtonTapped(index);
     }
 
     public void MoveUp()
     {
         art.localPosition = new Vector3(position.x, position.y, position.z);
-
-        if(enableClick) navigation.Select(index);
     }
 
     public void ToggleClick(bool target)
