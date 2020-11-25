@@ -9,37 +9,37 @@
             "time": 2.691,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 5.091,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 7.491,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 9.891,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 12.291,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 14.691,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 15.891,
@@ -57,25 +57,25 @@
             "time": 19.491,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 21.891,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 24.291,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 26.691,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 27.291,
@@ -99,73 +99,73 @@
             "time": 31.491,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 33.891,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 36.291,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 38.691,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 41.091,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 43.491,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 45.891,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 48.291,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 50.691,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 53.091,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 55.491,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 57.291,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 57.891,
@@ -177,25 +177,25 @@
             "time": 60.291,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 62.691,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 65.091,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 67.491,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 68.091,
@@ -231,19 +231,19 @@
             "time": 72.291,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 74.691,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 77.091,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 78.291,
@@ -261,19 +261,19 @@
             "time": 81.891,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 84.291,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 86.691,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 87.291,
@@ -303,13 +303,13 @@
             "time": 91.491,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 92.691,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 93.291,
@@ -327,7 +327,7 @@
             "time": 95.091,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 95.691,
@@ -345,7 +345,7 @@
             "time": 98.091,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 98.691,
@@ -357,7 +357,7 @@
             "time": 100.491,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 101.091,
@@ -369,25 +369,25 @@
             "time": 103.491,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 105.891,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 108.291,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 110.691,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 111.291,
@@ -399,7 +399,7 @@
             "time": 112.491,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 113.091,
@@ -411,19 +411,19 @@
             "time": 115.491,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 117.891,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 120.291,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 121.491,
@@ -453,49 +453,49 @@
             "time": 127.491,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 128.691,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 129.891,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 131.091,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 132.291,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 133.491,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 134.691,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 135.891,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 136.491,

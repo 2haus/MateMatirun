@@ -9,19 +9,19 @@
             "time": 2.405,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 3.617,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 4.829,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 5.435,
@@ -39,7 +39,7 @@
             "time": 7.253,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 7.859,
@@ -57,97 +57,97 @@
             "time": 9.677,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 10.889,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 12.102,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 13.314,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 14.526,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 15.738,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 16.950,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 18.162,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 19.374,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 20.586,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 21.798,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 23.011,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 24.223,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 25.435,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 26.647,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 27.859,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 28.465,
@@ -165,43 +165,43 @@
             "time": 30.283,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 31.495,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 32.708,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 33.920,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 35.132,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 36.344,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 37.556,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 38.162,
@@ -231,25 +231,25 @@
             "time": 41.192,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 42.405,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 43.617,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 44.829,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 45.435,
@@ -279,19 +279,19 @@
             "time": 48.465,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 49.677,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 50.889,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 51.495,
@@ -309,25 +309,25 @@
             "time": 53.314,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 54.526,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 55.738,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 56.950,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 57.556,
@@ -345,43 +345,43 @@
             "time": 59.374,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 60.586,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 61.798,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 63.011,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 64.223,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 65.435,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 66.647,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 67.253,
@@ -399,49 +399,49 @@
             "time": 69.071,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 70.283,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 71.495,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 72.708,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 73.920,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 75.132,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 76.344,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         },
         {
             "time": 77.556,
             "x": 1.0,
             "type": 1,
-            "regenerate": false
+            "regenerate": true
         }
     ],
     "songPath":"shimtone - Strength"
