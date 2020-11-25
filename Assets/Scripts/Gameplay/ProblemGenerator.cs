@@ -1,67 +1,54 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MMBackend;
 
 public class ProblemGenerator : MonoBehaviour
 {
-    public int operation;
-
     // Game internal difficulty
     int min = 0;
     int max = 9;
 
-    public int x;
-    public int y;
-    public int result;
-
-    public List<int> choices;
-
-    public void Initialization(int numberOfChoices)
+    public Question GenerateProblem(Question question, int numberOfChoices)
     {
-        choices = new List<int>(numberOfChoices);
+        question = new Question(numberOfChoices);
         for (int i = 0; i < numberOfChoices; i++)
-            choices.Add(0);
-    }
+            question.choices.Add(0);
 
-    public void GenerateProblem()
-    {
-        x = Random.Range(min, max);
-        y = Random.Range(min, max);
+        question.x = Random.Range(min, max);
+        question.y = Random.Range(min, max);
 
         // 0(Sum), 1(Subtraction), 2(Multiplication)
-        operation = Random.Range(0, 2);
+        question.operation = Random.Range(0, 2);
 
-        switch (operation)
+        switch (question.operation)
         {
             case 0:
-                result = x + y;
+                question.result = question.x + question.y;
                 break;
 
             case 1:
-                result = x - y;
+                question.result = question.x - question.y;
                 break;
 
             case 2:
-                result = x * y;
+                question.result = question.x * question.y;
                 break;
 
             default:
                 Debug.LogError("Error occured while trying to Generate a Math Problem");
                 break;
         }
-    }
 
-    public void GenerateChoices()
-    {
-        int answerPos = Random.Range(0, choices.Count);
-        Debug.Log($"Answer Pos: {answerPos}");
+        int answerPos = Random.Range(0, question.choices.Count);
+        //Debug.Log($"Answer: {question.result}");
         int number = 0;
 
         // Insert the answer into corresponding position generated beforehand
-        choices[answerPos] = result;
+        question.choices[answerPos] = question.result;
 
         // Generate the incorrect answer for the rest of the array
-        for (int i = 0; i < choices.Count; i++)
+        for (int i = 0; i < question.choices.Count; i++)
         {
             // If trying to generate the already filled answer in the array skip
             if (i == answerPos) continue;
@@ -69,7 +56,7 @@ public class ProblemGenerator : MonoBehaviour
             // Generating number
             while (true)
             {
-                switch (operation)
+                switch (question.operation)
                 {
                     case 0:
                         number = Random.Range(0, min + max);
@@ -88,13 +75,14 @@ public class ProblemGenerator : MonoBehaviour
                         break;
                 }
                 // To make sure the generated incorrect answer will not be the same
-                if (!choices.Contains(number))
+                if (!question.choices.Contains(number))
                 {
                     // Set the number to x-choices
-                    choices[i] = number;
+                    question.choices[i] = number;
                     break;
                 }
             }
         }
+        return question;
     }
 }

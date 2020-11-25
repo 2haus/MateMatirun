@@ -10,7 +10,10 @@ public class MusicCore : MonoBehaviour
     public AudioManager audioManager;
     public NoteSpawner spawner;
 
-    public ProblemGenerator generator;
+    public ChoicesManager choicesManager;
+
+    // Dificulty, 2 = easy, 3 = medium, 4 = hard
+    public int difficulty;
 
     // Song Selection Script call this method with Song class, apply all info to this variable.
     string songArtist;
@@ -32,8 +35,12 @@ public class MusicCore : MonoBehaviour
     public int pos = 0;
     bool isPlaying = false;
 
+    public bool once;
+
     public void LoadMap(Map map)
     {
+        once = true;
+
         // Assign map data to local variable
         songArtist = map.artist;
         songTitle = map.title;
@@ -44,7 +51,7 @@ public class MusicCore : MonoBehaviour
         universalOffset = audioManager.universalOffset;
 
         // Difficulty set to easy
-        generator.Initialization(2);
+        choicesManager.Initialization(2, judgementTime);
 
         audioManager.Initialized(map);
         secPerBeat = 60f / songBPM;
@@ -104,27 +111,12 @@ public class MusicCore : MonoBehaviour
             //}
 
             // Spawner
-            if (songPosition >= judgementTime[pos].time - timeGap + (universalOffset / 1000) && pos < judgementTime.Length - 1)
+            if (songPosition >= judgementTime[pos].time - timeGap + (universalOffset / 1000) && pos < judgementTime.Length)
             {
-                if (judgementTime[pos].regenerate)
+                if (once)
                 {
-                    generator.GenerateProblem();
-                    generator.GenerateChoices();
-
-                    // DEBUG ONLY
-                    string operation = "";
-                    switch (generator.operation)
-                    {
-                        case 0: operation = "+"; break;
-                        case 1: operation = "-"; break;
-                        case 2: operation = "*"; break;
-                    }
-                    Debug.Log($"Problems");
-                    Debug.Log($"{generator.x} {operation} {generator.y} = ?");
-                    for (int i = 0; i < 2; i++)
-                    {
-                        Debug.Log($"[{i}] {generator.choices[i]}");
-                    }
+                    choicesManager.CheckFor();
+                    once = false;
                 }
                 float time = Mathf.Abs((judgementTime[pos].time - songPosition));
                 spawner.Spawn(pos, time);

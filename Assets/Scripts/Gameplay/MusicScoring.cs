@@ -5,22 +5,12 @@ using UnityEngine;
 public class MusicScoring : MonoBehaviour
 {
     int i = 0;
-    public string HitResult(float timing)
+    public string HitResult(float timing, bool result)
     {
-        if (timing < 0.05f)
+        if (timing < 0.1f && result)
         {
             i++;
-            return $"Fantastic ({i}/460)";
-        }
-        else if (timing < 0.075f)
-        {
-            i++;
-            return $"Great ({i}/460)";
-        }
-        else if (timing < 0.1f)
-        {
-            i++;
-            return $"Bad ({i}/460)";
+            return $"{i}";
         }
         else
         {

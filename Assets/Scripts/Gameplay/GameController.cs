@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     public MusicCore map;
     public MusicScoring score;
     public MusicJudgement judge;
+    public ChoicesManager choicesManager;
 
     public PlayerController player;
     public PlayerAnimation playerAnimation;
@@ -33,22 +34,50 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("z") || Input.GetKeyDown("x")) {
-            audioManager.sfxPlay();
-            playerAnimation.PlayAnimation(PlayerAnimation.AnimationType.Attack);
+        //if (Input.GetKeyDown("z") || Input.GetKeyDown("x")) {
+        //    audioManager.sfxPlay();
+        //    playerAnimation.PlayAnimation(PlayerAnimation.AnimationType.Attack);
 
-            environmentSpeedControl = 0f;
+        //    environmentSpeedControl = 0f;
 
-            // Check judgement
-            if (limiter > 0)
+        //    // Check judgement
+        //    if (limiter > 0)
+        //    {
+        //        float value = map.CheckJudgement(player.notePos);
+        //        scoreType.text = score.HitResult(value, true);
+        //        player.Hit();
+        //        limiter--;
+        //    }
+        //}
+    }
+
+    public void OnPlayerHit(int answer)
+    {
+        audioManager.sfxPlay();
+        playerAnimation.PlayAnimation(PlayerAnimation.AnimationType.Attack);
+
+        environmentSpeedControl = 0f;
+
+        if (limiter > 0)
+        {
+            if (answer == choicesManager.problem.result)
             {
                 float value = map.CheckJudgement(player.notePos);
-                scoreType.text = score.HitResult(value);
+                scoreType.text = score.HitResult(value, true);
+                choicesManager.CheckFor();
                 player.Hit();
-                limiter--;
             }
+            else
+            {
+                float value = map.CheckJudgement(player.notePos);
+                scoreType.text = score.HitResult(value, false);
+                choicesManager.CheckFor();
+                player.Hit();
+            }
+            limiter--;
         }
     }
 
-
+    public void StopEnvironment() { environmentSpeedControl = 0f; }
+    public void StartEnvironment() { environmentSpeedControl = 0.035f; }
 }
