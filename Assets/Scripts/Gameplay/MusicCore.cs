@@ -37,7 +37,7 @@ public class MusicCore : MonoBehaviour
 
     public bool once;
 
-    public void LoadMap(Map map)
+    public void LoadMap(Map map, int difficulty)
     {
         once = true;
 
@@ -51,7 +51,7 @@ public class MusicCore : MonoBehaviour
         universalOffset = audioManager.universalOffset;
 
         // Difficulty set to easy
-        choicesManager.Initialization(2, judgementTime);
+        choicesManager.Initialization(difficulty, judgementTime);
 
         audioManager.Initialized(map);
         secPerBeat = 60f / songBPM;

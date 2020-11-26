@@ -12,6 +12,11 @@ public class MainMenuPlayButton : MonoBehaviour
 
     void Start()
     {
+        GameObject songSelectManager = GameObject.Find("SongSelectManager");
+        if (songSelectManager != null)
+        {
+            Destroy(songSelectManager);
+        }
         GetComponent<Button>().onClick.AddListener(EnterSongSelect);
         animate = false;
         speed = 10f;

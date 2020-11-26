@@ -37,6 +37,7 @@ public class GameplayLoader : MonoBehaviour
         // difficulty?
         Debug.Log(temporary.GetMapID());
         debugTest.SetPath(paths[temporary.GetMapID()]);
+        debugTest.SetDifficulty(temporary.GetDiffID());
         temporary.DestroyObject();
         temporary = null;
     }

@@ -26,7 +26,7 @@ public class SongSelectNavigation : MonoBehaviour
     void Start()
     {
         active = 0;
-        animate = false;
+        animate = true;
         time = 0f;
 
         temporary = GameObject.Find("SongSelectManager").GetComponent<SongSelectManager>();
@@ -40,7 +40,7 @@ public class SongSelectNavigation : MonoBehaviour
         if(animate)
         {
             time += Time.deltaTime;
-            if(time >= 1.5f)
+            if(time >= 1.25f)
             {
                 animate = false;
                 time = 0f;
@@ -72,18 +72,26 @@ public class SongSelectNavigation : MonoBehaviour
 
     void DifficultySelect()
     {
+        if (animate) return;
+        StartCoroutine(delay(0.75f));
+    }
+
+    IEnumerator delay(float second)
+    {
+        yield return new WaitForSeconds(second);
         screenTargetter.anchoredPosition = new Vector2(0f, -(Screen.height * 720f / Screen.width) - 1f);
         difficultyTargetter.anchoredPosition = Vector2.zero;
 
         animateTime = 1.5f;
         iTween.MoveTo(screen.gameObject, screenTargetter.transform.position, animateTime);
         iTween.MoveTo(difficultyScreen.gameObject, difficultyTargetter.transform.position, animateTime);
-
         animate = true;
     }
 
     public void Snap(int index)
     {
+        if (animate) return;
+
         songTargetter.anchoredPosition = new Vector2(index * -480f, songTargetter.anchoredPosition.y);
         float delta = Mathf.Abs(screen.anchoredPosition.x - songTargetter.anchoredPosition.x);
         if (delta > 225f) animateTime = 1.25f;

@@ -23,6 +23,7 @@ public class ChoicesManager : MonoBehaviour
 
     public void Initialization(int numberOfChoices, Timing[] judgementTime)
     {
+        numberOfChoices += 2;
         problem = new Question(numberOfChoices);
         this.numberOfChoices = numberOfChoices;
         for (int i = 0; i < judgementTime.Length; i++)
