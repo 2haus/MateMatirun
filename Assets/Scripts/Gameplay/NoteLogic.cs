@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
 using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class NoteLogic : MonoBehaviour
 {
     public EnemyController enemyController;
+    public GameObject bubble;
+    public Canvas bubbleText;
+    public Camera mainCamera;
+
+    public Text question;
 
     public int noteID;
 
@@ -18,6 +24,10 @@ public class NoteLogic : MonoBehaviour
 
     private void Start()
     {
+        // Set main camera and apply to canvas
+        mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
+        bubbleText.GetComponent<Canvas>().worldCamera = mainCamera;
+
         status = true;
         startPosition = transform.position;
         targetPosition = new Vector2(-8.4f, transform.position.y);
@@ -54,6 +64,9 @@ public class NoteLogic : MonoBehaviour
 
     public void Kill()
     {
+        // Destroy bubble sprite and text first
+        Destroy(bubble);
+        Destroy(question);
         gameObject.tag = "Untagged";
         enemyController.enemyAnimation.SetTrigger("Die");
     }

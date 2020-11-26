@@ -119,7 +119,7 @@ public class MusicCore : MonoBehaviour
                     once = false;
                 }
                 float time = Mathf.Abs((judgementTime[pos].time - songPosition));
-                spawner.Spawn(pos, time);
+                spawner.Spawn(pos, time, judgementTime[pos].regenerate);
                 pos++;
             }
         }

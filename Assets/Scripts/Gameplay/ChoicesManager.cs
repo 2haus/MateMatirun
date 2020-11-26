@@ -13,7 +13,8 @@ public class ChoicesManager : MonoBehaviour
     public Button[] button = new Button[4];
 
     // Declare queue for FIFO operation
-    public Queue<Question> questions = new Queue<Question>(4);
+    public Queue<Question> questions = new Queue<Question>();
+    public Queue<Question> bubbles = new Queue<Question>();
     public Queue<bool> noteStatus = new Queue<bool>();
 
     public Question problem;
@@ -36,6 +37,7 @@ public class ChoicesManager : MonoBehaviour
         {
             Question problem = new Question(numberOfChoices);
             problem = rng.GenerateProblem(problem, numberOfChoices);
+            bubbles.Enqueue(problem);
             questions.Enqueue(problem);
             noteStatus.Enqueue(true);
         }
@@ -59,6 +61,14 @@ public class ChoicesManager : MonoBehaviour
                 noteStatus.Dequeue();
             }
         }
+    }
+
+    public Question GetQuestion()
+    {
+        Question bubbleData = new Question(numberOfChoices);
+        bubbleData = bubbles.Dequeue();
+
+        return bubbleData;
     }
 
     public bool AnswerCheck(int answer)
