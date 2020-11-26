@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class SongSelectionClick : MonoBehaviour
 {
@@ -13,16 +12,15 @@ public class SongSelectionClick : MonoBehaviour
     bool enableClick;
     bool touched;
 
+    SongSelectManager temporary;
+
     void Start()
     {
         position = art.localPosition;
         enableClick = false;
         touched = false;
-    }
 
-    public void OnMouseButtonUp()
-    {
-        Debug.Log("click");
+        temporary = GameObject.Find("SongSelectManager").GetComponent<SongSelectManager>();
     }
 
     public void MoveDown()

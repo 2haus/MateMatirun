@@ -10,7 +10,10 @@ public class InvalidArraySizeException : System.Exception
 public class DifficultySelectionClick : MonoBehaviour
 {
     public RectTransform[] text;
+    public int index;
     Vector3 mainPosition, choicePosition;
+
+    SongSelectManager temporary;
 
     void Start()
     {
@@ -18,8 +21,16 @@ public class DifficultySelectionClick : MonoBehaviour
         mainPosition = text[0].localPosition;
         choicePosition = text[1].localPosition;
 
-        // Debug.Log($"{mainPosition.x}, {mainPosition.y}, {mainPosition.z}");
-        // Debug.Log($"{choicePosition.x}, {choicePosition.y}, {choicePosition.z}");
+        temporary = GameObject.Find("SongSelectManager").GetComponent<SongSelectManager>();
+
+        GetComponent<UnityEngine.UI.Button>().onClick.AddListener(SelectDifficulty);
+    }
+
+    void SelectDifficulty()
+    {
+        if (temporary.GetDiffID() == -1) temporary.SetDiffID(index);
+        
+        if(temporary.GetMapID() != -1) temporary.SwitchScene();
     }
 
     public void MoveDown()

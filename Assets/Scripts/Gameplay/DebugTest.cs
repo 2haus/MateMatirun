@@ -20,4 +20,9 @@ public class DebugTest : MonoBehaviour
         Debug.Log(song.title);
         map.LoadMap(song);
     }
+
+    public void SetPath(string target)
+    {
+        path = $"Resources/{target}";
+    }
 }

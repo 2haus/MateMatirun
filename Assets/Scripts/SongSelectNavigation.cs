@@ -16,6 +16,8 @@ public class SongSelectNavigation : MonoBehaviour
     public Button songSelectBack;
     public Button difficultyBack;
 
+    SongSelectManager temporary;
+
     int active;
     bool animate;
     float animateTime;
@@ -26,6 +28,8 @@ public class SongSelectNavigation : MonoBehaviour
         active = 0;
         animate = false;
         time = 0f;
+
+        temporary = GameObject.Find("SongSelectManager").GetComponent<SongSelectManager>();
 
         songSelectBack.onClick.AddListener(BackToMainMenu);
         difficultyBack.onClick.AddListener(BackToSongSelect);
@@ -55,6 +59,7 @@ public class SongSelectNavigation : MonoBehaviour
         iTween.MoveTo(screen.gameObject, screenTargetter.transform.position, animateTime);
         iTween.MoveTo(difficultyScreen.gameObject, difficultyTargetter.transform.position, animateTime);
 
+        temporary.SetMapID(-1);
         animate = true;
     }
 
@@ -93,7 +98,11 @@ public class SongSelectNavigation : MonoBehaviour
     {
         if (!animate)
         {
-            if (index == active) DifficultySelect();
+            if (index == active)
+            {
+                temporary.SetMapID(index);
+                DifficultySelect();
+            }
             else Snap(index);
         }
     }

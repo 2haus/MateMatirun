@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SongSelectManager : MonoBehaviour
 {
@@ -12,9 +13,30 @@ public class SongSelectManager : MonoBehaviour
     // This object will be read, and all neccessary song info will be transfer into
     // gamemanager in play scene
 
-    private void Start()
+    int mapID;
+    int diffID;
+
+    void Start()
     {
-        // Prevent this game object being destroy on scene change
         DontDestroyOnLoad(gameObject);
+
+        mapID = -1;
+        diffID = -1;
     }
+
+    public void DestroyObject()
+    {
+        Destroy(gameObject);
+    }
+
+    public void SwitchScene()
+    {
+        SceneManager.LoadScene("Play"); // use Async later
+    }
+
+    public void SetMapID(int mapID) { this.mapID = mapID; }
+    public void SetDiffID(int diffID) { this.diffID = diffID; }
+
+    public int GetMapID() { return mapID; }
+    public int GetDiffID() { return diffID; }
 }

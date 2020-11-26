@@ -123,6 +123,7 @@
     <Compile Include="Assets\Scripts\Gameplay\AudioManager.cs" />
     <Compile Include="Assets\Scripts\DifficultySelectionClick.cs" />
     <Compile Include="Assets\Scripts\GameInterfaceStart.cs" />
+    <Compile Include="Assets\Scripts\GameplayLoader.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Resources\Songs\Credits.txt" />
