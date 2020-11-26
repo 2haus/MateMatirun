@@ -122,6 +122,7 @@
     <Compile Include="Assets\Scripts\MapEditor\DeleteButton.cs" />
     <Compile Include="Assets\Scripts\Gameplay\AudioManager.cs" />
     <Compile Include="Assets\Scripts\DifficultySelectionClick.cs" />
+    <Compile Include="Assets\Scripts\GameInterfaceStart.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Resources\Songs\Credits.txt" />
