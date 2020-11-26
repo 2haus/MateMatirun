@@ -31,7 +31,8 @@ public class SongSelectManager : MonoBehaviour
 
     public void SwitchScene()
     {
-        SceneManager.LoadScene("Play"); // use Async later
+        // SceneManager.LoadScene("Play"); // use Async later
+        StartCoroutine(LoadPlayScene());
     }
 
     public void SetMapID(int mapID) { this.mapID = mapID; }
@@ -39,4 +40,15 @@ public class SongSelectManager : MonoBehaviour
 
     public int GetMapID() { return mapID; }
     public int GetDiffID() { return diffID; }
+
+    IEnumerator LoadPlayScene()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Play");
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return new WaitForSeconds(1f);
+        }
+    }
 }

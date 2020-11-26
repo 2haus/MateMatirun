@@ -9,6 +9,7 @@ public class InvalidArraySizeException : System.Exception
 
 public class DifficultySelectionClick : MonoBehaviour
 {
+    public LoadingScreenManager loadingManager;
     public RectTransform[] text;
     public int index;
     Vector3 mainPosition, choicePosition;
@@ -29,8 +30,12 @@ public class DifficultySelectionClick : MonoBehaviour
     void SelectDifficulty()
     {
         if (temporary.GetDiffID() == -1) temporary.SetDiffID(index);
-        
-        if(temporary.GetMapID() != -1) temporary.SwitchScene();
+
+        if (temporary.GetMapID() != -1)
+        {
+            loadingManager.ShowLoadingScreen();
+            temporary.SwitchScene();
+        }
     }
 
     public void MoveDown()

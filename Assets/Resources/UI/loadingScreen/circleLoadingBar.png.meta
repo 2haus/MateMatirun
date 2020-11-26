@@ -1,7 +1,100 @@
 fileFormatVersion: 2
 guid: 02cc902f7f046b241bc26c2b1a326e97
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 732405033164085404
+    second: circleLoadingBar_0
+  - first:
+      213: -4760389371044931743
+    second: circleLoadingBar_6
+  - first:
+      213: -2980930265839182146
+    second: circleLoadingBar_1
+  - first:
+      213: -3440898498871123110
+    second: circleLoadingBar_3
+  - first:
+      213: -7292523058613525975
+    second: circleLoadingBar_4
+  - first:
+      213: 3883273882526691003
+    second: circleLoadingBar_5
+  - first:
+      213: 3894348442002367283
+    second: circleLoadingBar_6
+  - first:
+      213: -9106190405138237524
+    second: circleLoadingBar_7
+  - first:
+      213: -6103353998125562592
+    second: circleLoadingBar_9
+  - first:
+      213: -9129890621505149453
+    second: circleLoadingBar_8
+  - first:
+      213: 8092295292957228622
+    second: circleLoadingBar_9
+  - first:
+      213: -3181089848040803324
+    second: circleLoadingBar_11
+  - first:
+      213: 1988259306976663790
+    second: circleLoadingBar_12
+  - first:
+      213: 1762404169815651461
+    second: circleLoadingBar_13
+  - first:
+      213: -5591179858919930336
+    second: circleLoadingBar_14
+  - first:
+      213: -7685125205526048768
+    second: circleLoadingBar_15
+  - first:
+      213: 7741480287984536684
+    second: circleLoadingBar_16
+  - first:
+      213: 6308341537401709792
+    second: circleLoadingBar_17
+  - first:
+      213: 5573489461273600835
+    second: circleLoadingBar_18
+  - first:
+      213: -6366085062118197144
+    second: circleLoadingBar_19
+  - first:
+      213: 9186129568152417161
+    second: circleLoadingBar_20
+  - first:
+      213: 5017537391407497437
+    second: circleLoadingBar_21
+  - first:
+      213: 3448442070409129125
+    second: circleLoadingBar_22
+  - first:
+      213: 4362075917704469243
+    second: circleLoadingBar_23
+  - first:
+      213: 6312468777412994513
+    second: circleLoadingBar_24
+  - first:
+      213: -3921707244241658344
+    second: circleLoadingBar_25
+  - first:
+      213: -3340428348346790917
+    second: circleLoadingBar_26
+  - first:
+      213: 745329712222754310
+    second: circleLoadingBar_27
+  - first:
+      213: -4606518771341601324
+    second: circleLoadingBar_28
+  - first:
+      213: 6880567009722748277
+    second: circleLoadingBar_29
+  - first:
+      213: 3424313109176474125
+    second: circleLoadingBar_30
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +125,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -41,7 +134,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -73,9 +166,243 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: circleLoadingBar_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 419
+        width: 90
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9814794f760a2a00800000000000000
+      internalID: 732405033164085404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circleLoadingBar_6
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 419
+        width: 88
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1675252b613bfedb0800000000000000
+      internalID: -4760389371044931743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circleLoadingBar_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 314
+        width: 87
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebed17487bb91a6d0800000000000000
+      internalID: -2980930265839182146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circleLoadingBar_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 209
+        width: 87
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53ac92cb097f30d0800000000000000
+      internalID: -3440898498871123110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circleLoadingBar_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 107
+        width: 90
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922eef66ae0cbca90800000000000000
+      internalID: -7292523058613525975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circleLoadingBar_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 90
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe2e8d850924e530800000000000000
+      internalID: 3883273882526691003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circleLoadingBar_7
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 314
+        width: 88
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca73aacb21050a180800000000000000
+      internalID: -9106190405138237524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circleLoadingBar_10
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 209
+        width: 88
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025044b20e78c4ba0800000000000000
+      internalID: -6103353998125562592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circleLoadingBar_8
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 104
+        width: 88
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5e30b1adc1c4180800000000000000
+      internalID: -9129890621505149453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circleLoadingBar_9
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 0
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ef742b1bb9d4070800000000000000
+      internalID: 8092295292957228622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
