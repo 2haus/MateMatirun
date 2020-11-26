@@ -53,16 +53,29 @@ namespace MMBackend.MapEditor
         /// <param name="path">Path to file.</param>
         /// <param name="mapOutput">Whether map is inside MapOutput folder.</param>
         /// <returns>Map object.</returns>
-        public static Map LoadMap(string path, bool mapOutput = false)
+        public static Map LoadMap(string path, bool mapOutput = false, bool editorMode = false)
         {
-            string file;
+            Map open;
 
-            if (mapOutput) file = appPath + "/MapOutput/" + path;
-            else file = appPath + "/" + path;
+            if (!editorMode)
+            {
+                string temp = Path.GetFileNameWithoutExtension(path);
 
-            StreamReader reader = new StreamReader(File.Open(file, FileMode.Open));
-            Map open = JsonConvert.DeserializeObject<Map>(reader.ReadToEnd());
-            reader.Close();
+                var json = Resources.Load<TextAsset>(temp);
+                open = JsonConvert.DeserializeObject<Map>(json.text);
+                Debug.Log("Loaded using Resources.Load()");
+            }
+            else
+            {
+                string file;
+
+                if (mapOutput) file = appPath + "/MapOutput/" + path;
+                else file = appPath + "/" + path;
+
+                StreamReader reader = new StreamReader(File.Open(file, FileMode.Open));
+                open = JsonConvert.DeserializeObject<Map>(reader.ReadToEnd());
+                reader.Close();
+            }
 
             return open;
         }

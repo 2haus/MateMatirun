@@ -11,10 +11,10 @@ public class GameplayLoader : MonoBehaviour
 {
     string[] paths = new string[]
     {
-        "Notzan - Futatsu kageboushi.json",
+        "Notzan - Futatsu Kageboushi.json",
         "shimtone - Strength.json",
-        "Tatsuzaki ichi - Taifunparedo.json",
-        "shimtone - shirai issen.json"
+        "Tatsuzaki Ichi - Typhoon Parade.json",
+        "shimtone - Shirai Issen.json"
     };
 
     public DebugTest debugTest;
@@ -33,9 +33,7 @@ public class GameplayLoader : MonoBehaviour
 
         if (temporary.GetMapID() == -1) throw new EmptyPathException();
 
-        // send string to DebugTest.cs
-        // difficulty?
-        Debug.Log(temporary.GetMapID());
+        // Debug.Log(temporary.GetMapID());
         debugTest.SetPath(paths[temporary.GetMapID()]);
         debugTest.SetDifficulty(temporary.GetDiffID());
         temporary.DestroyObject();

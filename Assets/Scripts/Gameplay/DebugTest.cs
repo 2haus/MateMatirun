@@ -25,7 +25,8 @@ public class DebugTest : MonoBehaviour
 
     public void SetPath(string target)
     {
-        path = $"Resources/{target}";
+        // path = $"Resources/{target}";
+        path = target;
     }
 
     public void SetDifficulty(int difficulty)
