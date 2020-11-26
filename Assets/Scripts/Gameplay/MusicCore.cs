@@ -111,7 +111,7 @@ public class MusicCore : MonoBehaviour
             //}
 
             // Spawner
-            if (songPosition >= judgementTime[pos].time - timeGap + (universalOffset / 1000) && pos < judgementTime.Length)
+            if (songPosition >= judgementTime[pos].time - timeGap + (universalOffset / 1000) && pos < judgementTime.Length - 1)
             {
                 if (once)
                 {
