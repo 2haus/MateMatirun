@@ -2,10 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public MusicCore map;
+    public Button pauseButton;
+
+    void Start(){
+        pauseButton.onClick.AddListener(PauseGame);
+    }
 
     public void StartCountdown(int countFromSeconds)
     {
@@ -23,6 +30,26 @@ public class GameManager : MonoBehaviour
 
         // Start Song
         map.GameStart();
+    }
+
+    public void PauseGame(){
+        Time.timeScale = 0;
+        map.PauseSong();
+        SceneManager.LoadScene("Pause", LoadSceneMode.Additive);
+    }
+
+    public void PlayGame(){
+        Time.timeScale = 1;
+        map.PlaySong();
+        SceneManager.UnloadSceneAsync("Pause");
+    }
+
+    public void RetryGame(){
+        SceneManager.LoadScene("Play");
+    }
+
+    public void ExitGame(){
+        SceneManager.LoadScene("Main");
     }
 }
 

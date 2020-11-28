@@ -6,18 +6,27 @@ using UnityEngine.UI;
 public class PlayerHighschool : MonoBehaviour
 {
     public Text highScore1, highScore2, highScore3;
+    public Text artistText, songText;
     public Text scoreText;
-    int score = 0;
-    int playerHighScore;
+    public int score;
 
-    void Update(){ 
-        playerHighScore = score;
-        scoreText.text = playerHighScore.ToString();
+    void Start() {
+        ApplyScore(score);
+        ApplyArtistSongText();
+    }
+
+    public void ApplyScore(int score){
+        scoreText.text = score.ToString();
         HighscoreController.addSkor(score);
 
-        //Show score
         highScore1.text = PlayerPrefs.GetInt("score1").ToString();
         highScore2.text = PlayerPrefs.GetInt("score2").ToString();
         highScore3.text = PlayerPrefs.GetInt("score3").ToString();
     }
+
+    public void ApplyArtistSongText(){
+        artistText.text = "artist";
+        songText.text = "song";
+    }
+
 }

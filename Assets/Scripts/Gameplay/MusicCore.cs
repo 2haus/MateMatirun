@@ -124,4 +124,12 @@ public class MusicCore : MonoBehaviour
             }
         }
     }
+
+    public void PauseSong(){
+        audioManager.musicPause();
+    }
+
+    public void PlaySong(){
+        audioManager.musicPlay();
+    }
 }
