@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuSettingButton : MonoBehaviour
 {
+    public MainMenuAd adGameObject;
+
     void Start()
     {
         GetComponent<Button>().onClick.AddListener(EnterSettings);
@@ -13,6 +15,7 @@ public class MainMenuSettingButton : MonoBehaviour
 
     void EnterSettings()
     {
+        adGameObject.DestroyBanner();
         SceneManager.LoadScene("Setting");
     }
 }

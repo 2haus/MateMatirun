@@ -12,6 +12,15 @@ public class MainMenuAd : MonoBehaviour
         // init
         MobileAds.Initialize(initStatus => { });
         RequestBanner();
+
+        List<string> deviceIds = new List<string>
+        {
+            "9C49BF91A8843A303BC5E65EF2FCE985",
+            "5A436D87B8422ACF30CF5BCD1CBC704A"
+        };
+        RequestConfiguration requestConfiguration = new RequestConfiguration.Builder().SetTestDeviceIds(deviceIds).build();
+
+        MobileAds.SetRequestConfiguration(requestConfiguration);
     }
 
     void Update()
