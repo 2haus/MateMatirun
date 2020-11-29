@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuPlayButton : MonoBehaviour
 {
     public Transform[] items; // put all items in the canvas here, later use fixed find method
+    public MainMenuAd adGameObject;
     bool animate, switching;
     float speed, time;
 
@@ -45,6 +46,7 @@ public class MainMenuPlayButton : MonoBehaviour
 
     void EnterSongSelect()
     {
+        adGameObject.DestroyBanner();
         animate = true;
     }
 
