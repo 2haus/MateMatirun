@@ -44,10 +44,12 @@ public class GameManager : MonoBehaviour
     }
 
     public void RetryGame(){
+        Time.timeScale = 1;
         SceneManager.LoadScene("Play");
     }
 
     public void ExitGame(){
+        Time.timeScale = 1;
         SceneManager.LoadScene("Main");
     }
 }

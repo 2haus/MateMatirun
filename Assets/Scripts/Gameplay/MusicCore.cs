@@ -24,6 +24,7 @@ public class MusicCore : MonoBehaviour
     public float songPosition;
     float dspSongTime;
     float lastDspTime;
+    float pauseDspTime;
 
     float universalOffset;
 
@@ -126,9 +127,13 @@ public class MusicCore : MonoBehaviour
 
     public void PauseSong(){
         audioManager.musicPause();
+        pauseDspTime = (float)AudioSettings.dspTime;
+        isPlaying = false;
     }
 
     public void PlaySong(){
+        dspSongTime = dspSongTime + ((float)AudioSettings.dspTime - pauseDspTime);
+        isPlaying = true;
         audioManager.musicPlay();
     }
 }

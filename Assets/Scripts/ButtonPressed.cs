@@ -14,8 +14,8 @@
         for(int i = 0; i < pos.Length; i++){
             pos[i] = textRect[i].localPosition;
         }
-        
     }
+
      public void Down()
      {
         for(int i = 0; i < pos.Length; i++){

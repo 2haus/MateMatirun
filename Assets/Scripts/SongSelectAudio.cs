@@ -24,7 +24,6 @@ public class SongSelectAudio : MonoBehaviour
 
     void Update()
     {
-        Debug.Log($"{audioSource.timeSamples}, {audioSource.time}");
         if(fade)
         {
             current += Time.deltaTime;

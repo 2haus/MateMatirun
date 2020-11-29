@@ -34,6 +34,6 @@ public class AudioManager : MonoBehaviour
     }
 
     public void musicPlay() { music.Play(); }
-    public void musicPause() { Debug.Log(music); music.Pause(); }
+    public void musicPause() { music.Pause(); }
     public void sfxPlay() { sfx.Play(); }
 }
