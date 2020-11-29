@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\DifficultySelectionClick.cs" />
      <Compile Include="Assets\Scripts\MapEditor\MapInfoEditor.cs" />
      <Compile Include="Assets\Scripts\GameplayLoader.cs" />
+     <Compile Include="Assets\Scripts\MainMenuAd.cs" />
      <Compile Include="Assets\Scripts\Gameplay\PauseManager.cs" />
      <Compile Include="Assets\Scripts\Gameplay\GameLimiter.cs" />
      <Compile Include="Assets\Scripts\MMBackend\Questions.cs" />
@@ -127,7 +128,6 @@
      <Compile Include="Assets\Scripts\Gameplay\MusicScoring.cs" />
      <Compile Include="Assets\Scripts\MapEditor\DeleteButton.cs" />
      <Compile Include="Assets\Scripts\Gameplay\AudioManager.cs" />
-     <Compile Include="Assets\Scripts\MainMenuAd.cs" />
      <None Include="Assets\Resources\Songs\Credits.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Documents/Game Design and Development/MateMatirun/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
