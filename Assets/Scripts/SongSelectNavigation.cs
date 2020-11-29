@@ -6,6 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class SongSelectNavigation : MonoBehaviour
 {
+    string[] json =
+    {
+        "Notzan - Futatsu Kageboushi",
+        "shimtone - Strength",
+        "Tatsuzaki Ichi - Typhoon Parade",
+        "shimtone - Shirai Issen"
+    };
+
+    public SongSelectAudio audioManager;
+
     public RectTransform screen;
     public RectTransform screenTargetter;
     public RectTransform songHolder;
@@ -30,6 +40,8 @@ public class SongSelectNavigation : MonoBehaviour
         time = 0f;
 
         temporary = GameObject.Find("SongSelectManager").GetComponent<SongSelectManager>();
+
+        audioManager.LoadMap(json[active]);
 
         songSelectBack.onClick.AddListener(BackToMainMenu);
         difficultyBack.onClick.AddListener(BackToSongSelect);
@@ -99,6 +111,8 @@ public class SongSelectNavigation : MonoBehaviour
 
         iTween.MoveTo(songHolder.gameObject, songTargetter.transform.position, animateTime);
         active = index;
+
+        audioManager.LoadMap(json[active]);
         animate = true;
     }
 
