@@ -261,7 +261,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5623503452074448121, guid: 0e5beeeef415a9748a8a2bc607d34cb5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e5beeeef415a9748a8a2bc607d34cb5, type: 3}
 --- !u!1 &525209403
 GameObject:
@@ -930,7 +931,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 105, y: 58.24}
+  m_AnchoredPosition: {x: 105, y: 58.240234}
   m_SizeDelta: {x: 187.83752, y: 103.22601}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1653537173
@@ -1257,7 +1258,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background-2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5623503452074448121, guid: 0e5beeeef415a9748a8a2bc607d34cb5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e5beeeef415a9748a8a2bc607d34cb5, type: 3}
 --- !u!1 &1890320274
 GameObject:

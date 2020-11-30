@@ -46,8 +46,8 @@ AudioSource:
   m_GameObject: {fileID: 1384379179835424306}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0a898871bec639c4893995f50a93a582, type: 3}
+  OutputAudioMixerGroup: {fileID: 8823620794736170526, guid: 5c2e76fe40eeeb443ba1343f61e11c59, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 8069bf76add01d54ebe6f2ae976db0c9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -317,6 +317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyAnimation: {fileID: 1384379181775496126}
   logic: {fileID: 7113794932274756182}
+  slimeSlash: {fileID: 954252027045491759}
 --- !u!1 &6128917520061793448
 GameObject:
   m_ObjectHideFlags: 0

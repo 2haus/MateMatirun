@@ -30,7 +30,7 @@ public class AudioManager : MonoBehaviour
     public void Initialized(Map map)
     {
         music.clip = Resources.Load<AudioClip>("Songs/" + map.songPath);
-        sfx.clip = Resources.Load<AudioClip>("SFX/normal-hitclap2");
+        sfx.clip = Resources.Load<AudioClip>("SFX/playerSlash");
     }
 
     public void musicPlay() { music.Play(); }

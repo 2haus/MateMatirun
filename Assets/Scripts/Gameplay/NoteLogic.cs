@@ -67,6 +67,7 @@ public class NoteLogic : MonoBehaviour
         Destroy(question);
         gameObject.tag = "Untagged";
         enemyController.enemyAnimation.SetTrigger("Die");
+        enemyController.slimeSlash.Play();
     }
 
     public void Destroy() { Destroy(gameObject);  }

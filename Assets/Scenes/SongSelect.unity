@@ -3896,7 +3896,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 57121028dc9f4f84eb9c091fe93d4fd1, type: 3}
     - target: {fileID: 7080013661586974511, guid: 84179f16f4c9cd643935938ffbfdca6a, type: 3}
       propertyPath: m_Text
-      value: Notzan
+      value: Notzan ACT
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84179f16f4c9cd643935938ffbfdca6a, type: 3}

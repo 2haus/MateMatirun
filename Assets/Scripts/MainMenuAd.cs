@@ -34,7 +34,7 @@ public class MainMenuAd : MonoBehaviour
 
         // fill ad unit id
         #if UNITY_ANDROID
-            adUnitId = "ca-app-pub-3940256099942544/6300978111"; // sample ad unit from google
+            adUnitId = "ca-app-pub-7211801647759739/3939405548";
         #else
             adUnitId = "unexpected_platform";
         #endif
