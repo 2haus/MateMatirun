@@ -45,6 +45,8 @@ public class SongSelectNavigation : MonoBehaviour
 
         songSelectBack.onClick.AddListener(BackToMainMenu);
         difficultyBack.onClick.AddListener(BackToSongSelect);
+
+        difficultyScreen.anchoredPosition = new Vector2(difficultyScreen.anchoredPosition.x, difficultyScreen.anchoredPosition.y + 10f);
     }
 
     void Update()
@@ -65,7 +67,7 @@ public class SongSelectNavigation : MonoBehaviour
         if (animate) return;
 
         screenTargetter.anchoredPosition = Vector2.zero;
-        difficultyTargetter.anchoredPosition = new Vector2(0f, (Screen.height * 720f / Screen.width) - 1f);
+        difficultyTargetter.anchoredPosition = new Vector2(0f, (Screen.height * 720f / Screen.width) + 10f);
 
         animateTime = 1.5f;
         iTween.MoveTo(screen.gameObject, screenTargetter.transform.position, animateTime);

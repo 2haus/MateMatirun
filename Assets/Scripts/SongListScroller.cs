@@ -41,6 +41,8 @@ public class SongListScroller : MonoBehaviour
                 int target;
                 if (x < 0f) target = (int)(Mathf.Abs(x - 285f) / 500f);
                 else target = 0;
+                if(target < 0) target = 0;
+                else if(target > 3) target = 3;
                 // Debug.Log($"{x}, {index}");
                 navigation.Snap(target);
             }
