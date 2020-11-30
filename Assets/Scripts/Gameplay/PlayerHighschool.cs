@@ -11,8 +11,12 @@ public class PlayerHighschool : MonoBehaviour
     public int score;
 
     void Start() {
+        GameObject userScoreObj = GameObject.Find("UserScore");
+        score = userScoreObj.GetComponent<UserScore>().score;
+        artistText.text = userScoreObj.GetComponent<UserScore>().songArtist;
+        songText.text = userScoreObj.GetComponent<UserScore>().songTitle;
+        Destroy(userScoreObj);
         ApplyScore(score);
-        ApplyArtistSongText();
     }
 
     public void ApplyScore(int score){
@@ -22,11 +26,6 @@ public class PlayerHighschool : MonoBehaviour
         highScore1.text = PlayerPrefs.GetInt("score1").ToString();
         highScore2.text = PlayerPrefs.GetInt("score2").ToString();
         highScore3.text = PlayerPrefs.GetInt("score3").ToString();
-    }
-
-    public void ApplyArtistSongText(){
-        artistText.text = "artist";
-        songText.text = "song";
     }
 
 }

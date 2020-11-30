@@ -8,8 +8,11 @@ public class MusicCore : MonoBehaviour
     public GameManager gameManager;
     public AudioManager audioManager;
     public NoteSpawner spawner;
+    public SongProgress songProgress;
 
     public ChoicesManager choicesManager;
+
+    public Map songInfo;
 
     // Dificulty, 2 = easy, 3 = medium, 4 = hard
     public int difficulty;
@@ -33,13 +36,14 @@ public class MusicCore : MonoBehaviour
     float timeGap;
 
     public int pos = 0;
-    bool isPlaying = false;
+    public bool isPlaying = false;
 
     public bool once;
 
     public void LoadMap(Map map, int difficulty)
     {
         once = true;
+        songInfo = map;
 
         // Assign map data to local variable
         songArtist = map.artist;
@@ -68,6 +72,7 @@ public class MusicCore : MonoBehaviour
     public void GameStart()
     {
         audioManager.musicPlay();
+        songProgress.Initialized();
         universalOffset = 0;
         dspSongTime = (float)AudioSettings.dspTime;
         lastDspTime = dspSongTime;
@@ -123,6 +128,11 @@ public class MusicCore : MonoBehaviour
                 pos++;
             }
         }
+    }
+
+    public float GetSongPosition()
+    {
+        return songPosition;
     }
 
     public void PauseSong(){

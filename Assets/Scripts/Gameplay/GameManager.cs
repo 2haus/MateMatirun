@@ -9,7 +9,10 @@ using MMBackend.MapEditor;
 public class GameManager : MonoBehaviour
 {
     public MusicCore map;
+    public MusicScoring scoring;
     public Button pauseButton;
+
+    public GameObject userScore;
 
     public Map song;
     int difficulty;
@@ -39,10 +42,24 @@ public class GameManager : MonoBehaviour
         map.GameStart();
     }
 
+    public void SongCompleted()
+    {
+        GameObject userScoreObj = Instantiate(userScore);
+        userScoreObj.name = "UserScore";
+        userScoreObj.GetComponent<UserScore>().score = scoring.getScore();
+        userScoreObj.GetComponent<UserScore>().songArtist = map.songInfo.artist;
+        userScoreObj.GetComponent<UserScore>().songTitle = map.songInfo.title;
+        DontDestroyOnLoad(userScoreObj);
+        SceneManager.LoadScene("HighScore");
+    }
+
     public void PauseGame(){
-        Time.timeScale = 0;
-        map.PauseSong();
-        SceneManager.LoadScene("Pause", LoadSceneMode.Additive);
+        if (map.isPlaying)
+        {
+            Time.timeScale = 0;
+            map.PauseSong();
+            SceneManager.LoadScene("Pause", LoadSceneMode.Additive);
+        }
     }
 
     public void PlayGame(){
