@@ -7,6 +7,7 @@ using MMBackend;
 public class ChoicesManager : MonoBehaviour
 {
     public MusicCore map;
+    public ChoicesUI ui;
     public ProblemGenerator rng;
     public int numberOfChoices;
 
@@ -23,6 +24,7 @@ public class ChoicesManager : MonoBehaviour
 
     public void Initialization(int numberOfChoices, Timing[] judgementTime)
     {
+        ui.Initialized(numberOfChoices);
         numberOfChoices += 2;
         problem = new Question(numberOfChoices);
         this.numberOfChoices = numberOfChoices;

@@ -130,6 +130,7 @@
     <Compile Include="Assets\Scripts\Gameplay\MusicScoring.cs" />
     <Compile Include="Assets\Scripts\MapEditor\DeleteButton.cs" />
     <Compile Include="Assets\Scripts\Gameplay\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\ChoicesUI.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Resources\Songs\Credits.txt" />

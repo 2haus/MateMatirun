@@ -17,7 +17,7 @@ public class GameplayLoader : MonoBehaviour
         "shimtone - Shirai Issen.json"
     };
 
-    public DebugTest debugTest;
+    public GameManager manager;
     SongSelectManager temporary;
 
     void Start()
@@ -34,8 +34,9 @@ public class GameplayLoader : MonoBehaviour
         if (temporary.GetMapID() == -1) throw new EmptyPathException();
 
         // Debug.Log(temporary.GetMapID());
-        debugTest.SetPath(paths[temporary.GetMapID()]);
-        debugTest.SetDifficulty(temporary.GetDiffID());
+        manager.SetPath(paths[temporary.GetMapID()]);
+        manager.SetDifficulty(temporary.GetDiffID());
+        manager.StartGame();
         temporary.DestroyObject();
         temporary = null;
     }
