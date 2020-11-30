@@ -37,7 +37,7 @@ public class GameplayLoader : MonoBehaviour
         manager.SetPath(paths[temporary.GetMapID()]);
         manager.SetDifficulty(temporary.GetDiffID());
         manager.StartGame();
-        temporary.DestroyObject();
+        // temporary.DestroyObject();
         temporary = null;
     }
 }

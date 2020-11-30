@@ -70,12 +70,20 @@ public class GameManager : MonoBehaviour
 
     public void RetryGame(){
         Time.timeScale = 1;
+        SceneManager.UnloadSceneAsync("Fail");
         SceneManager.LoadScene("Play");
     }
 
     public void ExitGame(){
         Time.timeScale = 1;
         SceneManager.LoadScene("Main");
+    }
+
+    public void Fail()
+    {
+        Time.timeScale = 0;
+        map.StopSong();
+        SceneManager.LoadScene("Fail", LoadSceneMode.Additive);
     }
 
     public void StartGame()

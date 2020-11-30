@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\DebugTest\Test.cs" />
     <Compile Include="Assets\Scripts\MMBackend\MapOperations.cs" />
     <Compile Include="Assets\Scripts\DifficultySelectionClick.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\UserScore.cs" />
     <Compile Include="Assets\Scripts\MapEditor\MapInfoEditor.cs" />
     <Compile Include="Assets\Scripts\GameplayLoader.cs" />
     <Compile Include="Assets\Scripts\MainMenuAd.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Assets\Scripts\BGController.cs" />
     <Compile Include="Assets\Scripts\DecoSpawner.cs" />
     <Compile Include="Assets\Scripts\Gameplay\MusicCore.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\FailManager.cs" />
     <Compile Include="Assets\Scripts\MainMenuCharacter.cs" />
     <Compile Include="Assets\Scripts\SongSelectionClick.cs" />
     <Compile Include="Assets\Scripts\MainMenuPlayButton.cs" />
@@ -99,6 +101,7 @@
     <Compile Include="Assets\Scripts\SongSelectNavigation.cs" />
     <Compile Include="Assets\Scripts\MapEditor\LoadDialog.cs" />
     <Compile Include="Assets\Scripts\GameInterfaceStart.cs" />
+    <Compile Include="Assets\Scripts\SongProgress.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DebugTest.cs" />
     <Compile Include="Assets\Scripts\SettingOffset.cs" />
     <Compile Include="Assets\Scripts\Gameplay\PlayerController.cs" />
@@ -129,10 +132,10 @@
     <Compile Include="Assets\Scripts\SettingBackButton.cs" />
     <Compile Include="Assets\Scripts\Gameplay\MusicScoring.cs" />
     <Compile Include="Assets\Scripts\MapEditor\DeleteButton.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Gameplay\ChoicesUI.cs" />
-    <Compile Include="Assets\Scripts\SongProgress.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\UserScore.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\BGMain.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Resources\Songs\Credits.txt" />

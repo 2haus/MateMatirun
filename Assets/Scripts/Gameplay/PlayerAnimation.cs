@@ -6,7 +6,7 @@ public class PlayerAnimation : MonoBehaviour
 {
     Animator playerAnim;
 
-    public enum AnimationType { Idle, Run, Attack };
+    public enum AnimationType { Idle, Run, Attack, Hurt };
     AnimationType types;
 
     private void Start()
@@ -28,6 +28,10 @@ public class PlayerAnimation : MonoBehaviour
 
             case AnimationType.Attack:
                 playerAnim.SetTrigger("Attack");
+                break;
+
+            case AnimationType.Hurt:
+                playerAnim.SetTrigger("Hurt");
                 break;
         }
     }

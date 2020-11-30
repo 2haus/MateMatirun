@@ -1749,6 +1749,8 @@ MonoBehaviour:
   songText: {fileID: 1647999259}
   scoreText: {fileID: 1637511414}
   score: 0
+  retry: {fileID: 1444562711}
+  exit: {fileID: 696779859}
 --- !u!4 &1397009438
 Transform:
   m_ObjectHideFlags: 0

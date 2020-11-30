@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHighschool : MonoBehaviour
 {
@@ -10,7 +11,12 @@ public class PlayerHighschool : MonoBehaviour
     public Text scoreText;
     public int score;
 
+    public Button retry, exit;
+
     void Start() {
+        retry.onClick.AddListener(Retry);
+        exit.onClick.AddListener(Exit);
+
         GameObject userScoreObj = GameObject.Find("UserScore");
         score = userScoreObj.GetComponent<UserScore>().score;
         artistText.text = userScoreObj.GetComponent<UserScore>().songArtist;
@@ -28,4 +34,13 @@ public class PlayerHighschool : MonoBehaviour
         highScore3.text = PlayerPrefs.GetInt("score3").ToString();
     }
 
+    void Retry()
+    {
+        SceneManager.LoadScene("Play");
+    }
+
+    void Exit()
+    {
+        SceneManager.LoadScene("Main");
+    }
 }

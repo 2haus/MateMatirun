@@ -146,4 +146,10 @@ public class MusicCore : MonoBehaviour
         isPlaying = true;
         audioManager.musicPlay();
     }
+
+    public void StopSong()
+    {
+        isPlaying = false;
+        audioManager.musicStop();
+    }
 }

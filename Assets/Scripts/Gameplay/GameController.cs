@@ -30,8 +30,8 @@ public class GameController : MonoBehaviour
         playerAnimation.PlayAnimation(PlayerAnimation.AnimationType.Run);
     }
 
-    private void Update()
-    {
+    //private void Update()
+    //{
         //if (Input.GetKeyDown("z") || Input.GetKeyDown("x")) {
         //    audioManager.sfxPlay();
         //    playerAnimation.PlayAnimation(PlayerAnimation.AnimationType.Attack);
@@ -47,7 +47,7 @@ public class GameController : MonoBehaviour
         //        limiter--;
         //    }
         //}
-    }
+    //}
 
     public void OnPlayerHit(int answer)
     {
@@ -61,7 +61,8 @@ public class GameController : MonoBehaviour
             if (answer == choicesManager.problem.result)
             {
                 float value = map.CheckJudgement(player.notePos);
-                scoreType.text = score.HitResult(value, true);
+                string result = score.HitResult(value, true);
+                scoreType.text = result;
                 choicesManager.CheckFor();
                 player.Hit();
             }

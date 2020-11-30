@@ -35,5 +35,6 @@ public class AudioManager : MonoBehaviour
 
     public void musicPlay() { music.Play(); }
     public void musicPause() { music.Pause(); }
+    public void musicStop() { music.Stop(); }
     public void sfxPlay() { sfx.Play(); }
 }

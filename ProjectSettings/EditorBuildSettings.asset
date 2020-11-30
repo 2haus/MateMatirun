@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HighScore.unity
     guid: 4cfe8cd081ed68a48a1094c87877864a
+  - enabled: 1
+    path: Assets/Scenes/Fail.unity
+    guid: bdbf3ade8a17d1644b980f18950d3635
   m_configObjects: {}

@@ -18,6 +18,8 @@ public class SongSelectManager : MonoBehaviour
 
     void Start()
     {
+        GameObject bgm = GameObject.Find("BGM");
+        Destroy(bgm);
         DontDestroyOnLoad(gameObject);
 
         mapID = -1;
