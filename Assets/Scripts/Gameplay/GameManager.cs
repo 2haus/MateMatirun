@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour
         userScoreObj.GetComponent<UserScore>().score = scoring.getScore();
         userScoreObj.GetComponent<UserScore>().songArtist = map.songInfo.artist;
         userScoreObj.GetComponent<UserScore>().songTitle = map.songInfo.title;
+        userScoreObj.GetComponent<UserScore>().songDifficulty = difficulty;
         DontDestroyOnLoad(userScoreObj);
         SceneManager.LoadScene("HighScore");
     }
