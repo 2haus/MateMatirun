@@ -120,6 +120,7 @@
     <Compile Include="Assets\Scripts\BGMain.cs" />
     <Compile Include="Assets\Scripts\MapEditor\AudioLoader.cs" />
     <Compile Include="Assets\Scripts\SongSelectScreenResizer.cs" />
+    <Compile Include="Assets\Scripts\MainMenuCreditsButton.cs" />
     <Compile Include="Assets\Scripts\DebugTest\DebugS.cs" />
     <Compile Include="Assets\Scripts\Gameplay\ChoicesManager.cs" />
     <Compile Include="Assets\Scripts\Gameplay\ScoreManager.cs" />
@@ -137,7 +138,7 @@
     <Compile Include="Assets\Scripts\MapEditor\DeleteButton.cs" />
     <Compile Include="Assets\Scripts\Gameplay\ChoicesUI.cs" />
     <Compile Include="Assets\Scripts\Gameplay\AudioManager.cs" />
-    <Compile Include="Assets\Scripts\MainMenuCreditsButton.cs" />
+    <Compile Include="Assets\Scripts\CameraResizer.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Resources\Songs\Credits.txt" />
