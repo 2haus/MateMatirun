@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class SettingSound : MonoBehaviour
 {
+    public AudioMixer mixer;
     public SettingsStore store;
     public Button volUp, volDown;
     Text sfx;
@@ -27,6 +29,8 @@ public class SettingSound : MonoBehaviour
 
         sfx.text = (volume * 100).ToString() + "%";
         store.UpdateSound(volume);
+        if (volume == 0f) mixer.SetFloat("SFX", -80f);
+        else mixer.SetFloat("SFX", Mathf.Log(volume) * 20);
     }
 
     void VolUp()

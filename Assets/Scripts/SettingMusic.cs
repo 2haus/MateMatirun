@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class SettingMusic : MonoBehaviour
 {
+    public AudioMixer mixer;
     public SettingsStore store;
     public Button volUp, volDown;
     Text music;
@@ -27,6 +29,8 @@ public class SettingMusic : MonoBehaviour
 
         music.text = (volume * 100).ToString() + "%";
         store.UpdateMusic(volume);
+        if (volume == 0f) mixer.SetFloat("Music", -80f);
+        else mixer.SetFloat("Music", Mathf.Log(volume) * 20);
     }
 
     void VolUp()

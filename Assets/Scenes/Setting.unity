@@ -961,6 +961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b68197df04501428dfd850ffbd865a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 5c2e76fe40eeeb443ba1343f61e11c59, type: 2}
   store: {fileID: 1014984717}
   volUp: {fileID: 386183296}
   volDown: {fileID: 1357835032}
@@ -1340,6 +1341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1118d133234ce174f954557e76ebe35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 5c2e76fe40eeeb443ba1343f61e11c59, type: 2}
   store: {fileID: 1014984717}
   volUp: {fileID: 1556571706}
   volDown: {fileID: 1790321094}
