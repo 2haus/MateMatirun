@@ -27,18 +27,27 @@ public class SongSelectionClick : MonoBehaviour
     {
         art.localPosition = new Vector3(position.x, position.y - 4f, position.z);
 
-        if (Input.touchCount > 0)
+        if (Input.touchCount == 1)
         {
             touched = true;
             scroller.ButtonTapped(index);
+        }
+        else if(Input.touchCount >= 2)
+        {
+            touched = false;
         }
     }
 
     public void MoveUp()
     {
+        Debug.Log("Move up");
         art.localPosition = new Vector3(position.x, position.y, position.z);
 
-        if (!touched) scroller.DirectClick(index);
+        if (!touched)
+        {
+            Debug.Log("Clicking");
+            scroller.DirectClick(index);
+        }
         touched = false;
     }
 

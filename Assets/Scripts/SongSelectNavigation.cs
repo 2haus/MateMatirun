@@ -90,6 +90,13 @@ public class SongSelectNavigation : MonoBehaviour
         StartCoroutine(delay(0.75f));
     }
 
+    void StopTween()
+    {
+        iTween.Stop();
+        screen.anchoredPosition = screenTargetter.anchoredPosition;
+        difficultyScreen.anchoredPosition = difficultyTargetter.anchoredPosition;
+    }
+
     IEnumerator delay(float second)
     {
         yield return new WaitForSeconds(second);
@@ -120,8 +127,10 @@ public class SongSelectNavigation : MonoBehaviour
 
     public void Select(int index)
     {
+        Debug.Log("Triggered Select");
         if (!animate)
         {
+            StopTween();
             if (index == active)
             {
                 temporary.SetMapID(index);
