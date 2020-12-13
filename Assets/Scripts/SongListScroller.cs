@@ -23,6 +23,7 @@ public class SongListScroller : MonoBehaviour
 
     void Update()
     {
+        // Debug.Log(swipeable);
         if(swipeable)
         {
             if (Input.touchCount >= 2)
@@ -92,6 +93,14 @@ public class SongListScroller : MonoBehaviour
     public void DirectClick(int index)
     {
         navigation.Select(index);
+    }
+
+    public bool Selection(int index)
+    {
+        if (scrolling) return false;
+
+        navigation.Selection(index);
+        return true;
     }
 
     public void ToggleSwipe()

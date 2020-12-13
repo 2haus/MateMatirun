@@ -1386,6 +1386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingManager: {fileID: 1457212095}
+  navigation: {fileID: 859492880}
   text:
   - {fileID: 1804776930}
   - {fileID: 2134008300}
@@ -1538,6 +1539,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navigation: {fileID: 859492880}
+  click:
+  - {fileID: 1127732485}
+  - {fileID: 1880111858}
   scroller: {fileID: 859492881}
   screenTargetter: {fileID: 74570072}
 --- !u!114 &859492880
@@ -1883,6 +1887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingManager: {fileID: 1457212095}
+  navigation: {fileID: 859492880}
   text:
   - {fileID: 145195389}
   - {fileID: 1239882580}
@@ -2372,6 +2377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingManager: {fileID: 1457212095}
+  navigation: {fileID: 859492880}
   text:
   - {fileID: 1035278675}
   - {fileID: 690523998}

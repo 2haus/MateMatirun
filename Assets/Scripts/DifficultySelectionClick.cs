@@ -10,6 +10,7 @@ public class InvalidArraySizeException : System.Exception
 public class DifficultySelectionClick : MonoBehaviour
 {
     public LoadingScreenManager loadingManager;
+    public SongSelectNavigation navigation;
     public RectTransform[] text;
     public int index;
     Vector3 mainPosition, choicePosition;
@@ -33,6 +34,7 @@ public class DifficultySelectionClick : MonoBehaviour
 
         if (temporary.GetMapID() != -1)
         {
+            navigation.DisableDifficultyBack();
             loadingManager.ShowLoadingScreen();
             temporary.SwitchScene();
         }

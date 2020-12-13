@@ -107,6 +107,7 @@ public class SongSelectNavigation : MonoBehaviour
 
     void StopTween()
     {
+        Debug.Log("stopping tween");
         if (iTween.tweens.Count > 0) iTween.Stop();
         screen.anchoredPosition = screenTargetter.anchoredPosition;
         difficultyScreen.anchoredPosition = difficultyTargetter.anchoredPosition;
@@ -148,20 +149,31 @@ public class SongSelectNavigation : MonoBehaviour
         Debug.Log("Triggered Select");
         if (!animate)
         {
-            StopTween();
-            if (index == active)
-            {
-                temporary.SetMapID(index);
-                scroller.ToggleSwipe(false);
-                songSelect = false;
-                DifficultySelect();
-            }
-            else Snap(index);
+            // StopTween();
+            Snap(index);
+        }
+    }
+
+    public void Selection(int index)
+    {
+        Debug.Log($"selecting {index}");
+        if (index == active)
+        {
+            // StopTween();
+            temporary.SetMapID(index);
+            scroller.ToggleSwipe(false);
+            songSelect = false;
+            DifficultySelect();
         }
     }
 
     public void ToggleAnimate(bool target)
     {
         animate = target;
+    }
+
+    public void DisableDifficultyBack()
+    {
+        difficultyBack.enabled = false;
     }
 }

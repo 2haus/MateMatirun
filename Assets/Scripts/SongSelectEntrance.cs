@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SongSelectEntrance : MonoBehaviour
 {
     public SongSelectNavigation navigation;
+    public SongSelectionClick[] click;
     public SongListScroller scroller;
     public Transform screenTargetter;
     RectTransform screenPanel;
@@ -51,6 +52,7 @@ public class SongSelectEntrance : MonoBehaviour
                 animate = false;
                 navigation.ToggleAnimate(false);
                 scroller.ToggleSwipe(true);
+                foreach (SongSelectionClick temp in click) temp.EnableClick();
                 time = 0f;
                 Destroy(this);
             }

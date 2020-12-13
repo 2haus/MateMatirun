@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SongSelectionClick : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class SongSelectionClick : MonoBehaviour
 
     bool enableClick;
     bool touched;
+    bool twoFingers;
 
     SongSelectManager temporary;
 
@@ -19,8 +21,15 @@ public class SongSelectionClick : MonoBehaviour
         position = art.localPosition;
         enableClick = false;
         touched = false;
+        twoFingers = false;
 
         temporary = GameObject.Find("SongSelectManager").GetComponent<SongSelectManager>();
+    }
+
+    void Selection()
+    {
+        Debug.Log(index);
+        scroller.Selection(index);
     }
 
     public void MoveDown()
@@ -34,7 +43,7 @@ public class SongSelectionClick : MonoBehaviour
         }
         else if(Input.touchCount >= 2)
         {
-            touched = false;
+            twoFingers = true;
         }
     }
 
@@ -43,16 +52,22 @@ public class SongSelectionClick : MonoBehaviour
         Debug.Log("Move up");
         art.localPosition = new Vector3(position.x, position.y, position.z);
 
-        if (!touched)
+        if (!touched && !twoFingers)
         {
             Debug.Log("Clicking");
             scroller.DirectClick(index);
         }
         touched = false;
+        twoFingers = false;
     }
 
     public void ToggleClick(bool target)
     {
         enableClick = target;
+    }
+
+    public void EnableClick()
+    {
+        GetComponent<Button>().onClick.AddListener(Selection);
     }
 }
