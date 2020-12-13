@@ -107,7 +107,7 @@ public class SongSelectNavigation : MonoBehaviour
 
     void StopTween()
     {
-        iTween.Stop();
+        if (iTween.tweens.Count > 0) iTween.Stop();
         screen.anchoredPosition = screenTargetter.anchoredPosition;
         difficultyScreen.anchoredPosition = difficultyTargetter.anchoredPosition;
     }
