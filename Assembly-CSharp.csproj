@@ -103,6 +103,7 @@
     <Compile Include="Assets\Scripts\MapEditor\LoadDialog.cs" />
     <Compile Include="Assets\Scripts\GameInterfaceStart.cs" />
     <Compile Include="Assets\Scripts\SongProgress.cs" />
+    <Compile Include="Assets\Scripts\CameraResizer.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DebugTest.cs" />
     <Compile Include="Assets\Scripts\SettingOffset.cs" />
     <Compile Include="Assets\Scripts\Gameplay\PlayerController.cs" />
@@ -138,7 +139,6 @@
     <Compile Include="Assets\Scripts\MapEditor\DeleteButton.cs" />
     <Compile Include="Assets\Scripts\Gameplay\ChoicesUI.cs" />
     <Compile Include="Assets\Scripts\Gameplay\AudioManager.cs" />
-    <Compile Include="Assets\Scripts\CameraResizer.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Resources\Songs\Credits.txt" />

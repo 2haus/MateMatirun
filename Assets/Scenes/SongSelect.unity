@@ -1538,6 +1538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navigation: {fileID: 859492880}
+  scroller: {fileID: 859492881}
   screenTargetter: {fileID: 74570072}
 --- !u!114 &859492880
 MonoBehaviour:
@@ -1552,6 +1553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioManager: {fileID: 509078289}
+  scroller: {fileID: 859492881}
   screen: {fileID: 859492877}
   screenTargetter: {fileID: 74570072}
   songHolder: {fileID: 794127437}

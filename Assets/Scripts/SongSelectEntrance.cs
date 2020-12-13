@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SongSelectEntrance : MonoBehaviour
 {
     public SongSelectNavigation navigation;
+    public SongListScroller scroller;
     public Transform screenTargetter;
     RectTransform screenPanel;
     // float speed;
@@ -20,6 +21,7 @@ public class SongSelectEntrance : MonoBehaviour
         navigation.ToggleAnimate(true);
 
         iTween.MoveTo(gameObject, screenTargetter.transform.position, 2f);
+        scroller.ToggleSwipe(false);
         // speed = 1000f;
     }
 
@@ -48,7 +50,9 @@ public class SongSelectEntrance : MonoBehaviour
             {
                 animate = false;
                 navigation.ToggleAnimate(false);
+                scroller.ToggleSwipe(true);
                 time = 0f;
+                Destroy(this);
             }
         }
     }

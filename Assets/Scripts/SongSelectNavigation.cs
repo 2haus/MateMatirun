@@ -15,6 +15,7 @@ public class SongSelectNavigation : MonoBehaviour
     };
 
     public SongSelectAudio audioManager;
+    public SongListScroller scroller;
 
     public RectTransform screen;
     public RectTransform screenTargetter;
@@ -32,12 +33,14 @@ public class SongSelectNavigation : MonoBehaviour
     bool animate;
     float animateTime;
     float time;
+    bool songSelect;
 
     void Start()
     {
         active = 0;
         animate = true;
         time = 0f;
+        songSelect = true;
 
         temporary = GameObject.Find("SongSelectManager").GetComponent<SongSelectManager>();
 
@@ -54,9 +57,10 @@ public class SongSelectNavigation : MonoBehaviour
         if(animate)
         {
             time += Time.deltaTime;
-            if(time >= 1.25f)
+            if(time >= animateTime)
             {
                 animate = false;
+                if(songSelect) scroller.ToggleSwipe(true);
                 time = 0f;
             }
         }
@@ -66,14 +70,18 @@ public class SongSelectNavigation : MonoBehaviour
     {
         if (animate) return;
 
+        Debug.Log("back");
+
         screenTargetter.anchoredPosition = Vector2.zero;
         difficultyTargetter.anchoredPosition = new Vector2(0f, (Screen.height * 720f / Screen.width) + 10f);
 
-        animateTime = 1.5f;
+        animateTime = 1.25f;
         iTween.MoveTo(screen.gameObject, screenTargetter.transform.position, animateTime);
         iTween.MoveTo(difficultyScreen.gameObject, difficultyTargetter.transform.position, animateTime);
 
         temporary.SetMapID(-1);
+        scroller.ToggleSwipe(false);
+        songSelect = true;
         animate = true;
     }
 
@@ -87,7 +95,14 @@ public class SongSelectNavigation : MonoBehaviour
     void DifficultySelect()
     {
         if (animate) return;
-        StartCoroutine(delay(0.75f));
+        screenTargetter.anchoredPosition = new Vector2(0f, -(Screen.height * 720f / Screen.width) - 1f);
+        difficultyTargetter.anchoredPosition = Vector2.zero;
+
+        animateTime = 1.25f;
+        iTween.MoveTo(screen.gameObject, screenTargetter.transform.position, animateTime);
+        iTween.MoveTo(difficultyScreen.gameObject, difficultyTargetter.transform.position, animateTime);
+        animate = true;
+        // StartCoroutine(delay(0.75f));
     }
 
     void StopTween()
@@ -103,7 +118,7 @@ public class SongSelectNavigation : MonoBehaviour
         screenTargetter.anchoredPosition = new Vector2(0f, -(Screen.height * 720f / Screen.width) - 1f);
         difficultyTargetter.anchoredPosition = Vector2.zero;
 
-        animateTime = 1.5f;
+        animateTime = 1.25f;
         iTween.MoveTo(screen.gameObject, screenTargetter.transform.position, animateTime);
         iTween.MoveTo(difficultyScreen.gameObject, difficultyTargetter.transform.position, animateTime);
         animate = true;
@@ -113,15 +128,18 @@ public class SongSelectNavigation : MonoBehaviour
     {
         if (animate) return;
 
+        scroller.ToggleSwipe(false);
         songTargetter.anchoredPosition = new Vector2(index * -480f, songTargetter.anchoredPosition.y);
-        float delta = Mathf.Abs(screen.anchoredPosition.x - songTargetter.anchoredPosition.x);
+        float delta = Mathf.Abs(songHolder.anchoredPosition.x - songTargetter.anchoredPosition.x);
+        Debug.Log($"holder = {songHolder.anchoredPosition.x}, targetter = {songTargetter.anchoredPosition.x}, delta = {delta}");
         if (delta > 225f) animateTime = 1.25f;
-        else animateTime = 1.25f + (delta / 25f);
+        else animateTime = delta / 225f * 1.25f;
 
         iTween.MoveTo(songHolder.gameObject, songTargetter.transform.position, animateTime);
+
+        if(index != active) audioManager.LoadMap(json[index]);
         active = index;
 
-        audioManager.LoadMap(json[active]);
         animate = true;
     }
 
@@ -134,6 +152,8 @@ public class SongSelectNavigation : MonoBehaviour
             if (index == active)
             {
                 temporary.SetMapID(index);
+                scroller.ToggleSwipe(false);
+                songSelect = false;
                 DifficultySelect();
             }
             else Snap(index);

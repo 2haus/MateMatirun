@@ -13,6 +13,7 @@ public class SongSelectAudio : MonoBehaviour
     bool fade;
     float target;
     float current;
+    int previewPoint;
 
     void Start()
     {
@@ -35,6 +36,8 @@ public class SongSelectAudio : MonoBehaviour
             }
             else audioMixer.SetFloat("Music", Mathf.Log(current) * 20);
         }
+
+        if (audioSource.time >= audioSource.clip.length) PlayAudio(previewPoint);
     }
 
     void LoadSettings()
@@ -51,12 +54,19 @@ public class SongSelectAudio : MonoBehaviour
         // Debug.Log($"{map.songPath}");
 
         audioSource.clip = Resources.Load<AudioClip>($"Songs/{map.songPath}");
-        PlayAudio(map.preview);
+        previewPoint = map.preview;
+        PlayAudio(previewPoint);
     }
 
     public void PlayAudio(int previewPoint = 0)
     {
         if (previewPoint != 0) audioSource.timeSamples = previewPoint;
+        audioSource.Play();
+    }
+
+    public void PlayAudio(float startTime = 0f)
+    {
+        if (startTime != 0f) audioSource.time = startTime;
         audioSource.Play();
     }
 

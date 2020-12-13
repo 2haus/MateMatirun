@@ -11,57 +11,63 @@ public class SongListScroller : MonoBehaviour
     bool active;
     bool scrolling;
     bool twoFingered;
+    bool swipeable;
 
     int index;
 
     void Start()
     {
         twoFingered = false;
+        swipeable = false;
     }
 
     void Update()
     {
-        if(Input.touchCount >= 2)
+        if(swipeable)
         {
-            Debug.Log("Two fingers detected!");
-            twoFingered = true;
-            active = true;
-            SnapSong();
-        }
-        else if (Input.touchCount == 1)
-        {
-            if(!twoFingered)
+            if (Input.touchCount >= 2)
             {
+                Debug.Log("Two fingers detected!");
+                twoFingered = true;
                 active = true;
-                Touch input = Input.GetTouch(0);
-                if (input.deltaPosition.x != 0)
-                {
-                    scrolling = true;
-                    foreach (SongSelectionClick temp in click) temp.ToggleClick(false);
-                }
-                songList.anchoredPosition = new Vector2(songList.anchoredPosition.x + input.deltaPosition.x, songList.anchoredPosition.y);
+                if(scrolling) SnapSong();
             }
-        }
-        else if(Input.touchCount == 0 && active)
-        {
-            // int index = (int)(Mathf.Abs(songList.anchoredPosition.x) - 240) / 480;
-            if(!twoFingered)
+            else if (Input.touchCount == 1)
             {
-                if (!scrolling)
+                if (!twoFingered)
                 {
-                    Debug.Log($"not scrolling. selecting item {index}");
-                    navigation.Select(index);
+                    active = true;
+                    Touch input = Input.GetTouch(0);
+                    if (input.deltaPosition.x != 0)
+                    {
+                        scrolling = true;
+                        foreach (SongSelectionClick temp in click) temp.ToggleClick(false);
+                    }
+                    songList.anchoredPosition = new Vector2(songList.anchoredPosition.x + input.deltaPosition.x, songList.anchoredPosition.y);
                 }
-                else SnapSong();
-                scrolling = false;
-
-                active = false;
-
-                foreach (SongSelectionClick temp in click) temp.ToggleClick(true);
             }
-            Debug.Log($"twoFingered: {twoFingered}");
+            else if (Input.touchCount == 0 && active)
+            {
+                Debug.Log($"twoFingered: {twoFingered}");
+                // int index = (int)(Mathf.Abs(songList.anchoredPosition.x) - 240) / 480;
+                if (!twoFingered)
+                {
+                    if (!scrolling)
+                    {
+                        Debug.Log($"not scrolling. selecting item {index}");
+                        navigation.Select(index);
+                    }
+                    else SnapSong();
+                    scrolling = false;
 
-            twoFingered = false;
+                    active = false;
+
+                    foreach (SongSelectionClick temp in click) temp.ToggleClick(true);
+                }
+
+                twoFingered = false;
+                active = false;
+            }
         }
     }
 
@@ -86,5 +92,21 @@ public class SongListScroller : MonoBehaviour
     public void DirectClick(int index)
     {
         navigation.Select(index);
+    }
+
+    public void ToggleSwipe()
+    {
+        swipeable = !swipeable;
+    }
+    
+
+    public void ToggleSwipe(bool target)
+    {
+        swipeable = target;
+    }
+
+    public bool GetSwipeableStatus()
+    {
+        return swipeable;
     }
 }
