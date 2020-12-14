@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using UnityEngine;
 
 namespace MMBackend
@@ -6,6 +7,7 @@ namespace MMBackend
     /// <summary>
     /// Map class.
     /// </summary>
+    [Serializable]
     public class Map
     {
         // metadata
