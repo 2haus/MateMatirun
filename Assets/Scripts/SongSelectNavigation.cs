@@ -126,7 +126,10 @@ public class SongSelectNavigation : MonoBehaviour
     void StopTween()
     {
         // Debug.Log("stopping tween");
-        if (iTween.tweens.Count > 0) iTween.Stop();
+        try
+        {
+            if (iTween.tweens.Count > 0) iTween.Stop();
+        } catch {}
         screen.anchoredPosition = screenTargetter.anchoredPosition;
         difficultyScreen.anchoredPosition = difficultyTargetter.anchoredPosition;
     }

@@ -19,6 +19,7 @@ public class SongListScroller : MonoBehaviour
     {
         twoFingered = false;
         swipeable = false;
+        scrolling = false;
     }
 
     void Update()
@@ -34,8 +35,10 @@ public class SongListScroller : MonoBehaviour
             }
             else if (Input.touchCount == 1)
             {
-                if (iTween.tweens.Count > 0)
-                    iTween.Stop();
+                try
+                {
+                    if (iTween.tweens.Count > 0) iTween.Stop();
+                } catch {}
                 if (!twoFingered)
                 {
                     active = true;
@@ -95,6 +98,7 @@ public class SongListScroller : MonoBehaviour
     public bool Selection(int index)
     {
         // Debug.Log($"clicked {index}");
+        // Debug.Log(scrolling);
         if (scrolling) return false;
 
         navigation.Selection(index);

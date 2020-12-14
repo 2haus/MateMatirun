@@ -51,7 +51,11 @@ public class SongSelectEntrance : MonoBehaviour
                 animate = false;
                 navigation.ToggleAnimate(false);
                 scroller.ToggleSwipe(true);
-                foreach (SongSelectionClick temp in click) temp.EnableClick();
+                foreach (SongSelectionClick temp in click)
+                {
+                    temp.EnableClick();
+                    temp.ToggleClick(true);
+                }
                 time = 0f;
                 Destroy(this);
             }

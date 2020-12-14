@@ -28,9 +28,10 @@ public class SongSelectionClick : MonoBehaviour
 
     void Selection()
     {
+        // Debug.Log(enableClick);
         if(enableClick)
         {
-            Debug.Log(index);
+            // Debug.Log(index);
             scroller.Selection(index);
         }
     }
