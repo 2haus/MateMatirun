@@ -19,7 +19,6 @@ public class SongSelectEntrance : MonoBehaviour
         screenPanel = GetComponent<RectTransform>();
         screenPanel.anchoredPosition = new Vector3(720f, 0);
         animate = true;
-        navigation.ToggleAnimate(true);
 
         iTween.MoveTo(gameObject, screenTargetter.transform.position, 2f);
         scroller.ToggleSwipe(false);

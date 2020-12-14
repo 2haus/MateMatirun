@@ -38,7 +38,7 @@ public class SongSelectNavigation : MonoBehaviour
     void Start()
     {
         active = 0;
-        animate = true;
+        animate = false;
         time = 0f;
         songSelect = true;
 
@@ -60,7 +60,12 @@ public class SongSelectNavigation : MonoBehaviour
             if(time >= animateTime)
             {
                 animate = false;
-                if(songSelect) scroller.ToggleSwipe(true);
+                if (songSelect)
+                {
+                    scroller.ToggleSwipe(true);
+                    scroller.ToggleClick(true);
+                }
+                Debug.Log("animation stop");
                 time = 0f;
             }
         }
@@ -71,6 +76,7 @@ public class SongSelectNavigation : MonoBehaviour
         if (animate) return;
 
         Debug.Log("back");
+        songHolder.anchoredPosition = new Vector2(active * -480f, 109f);
 
         screenTargetter.anchoredPosition = Vector2.zero;
         difficultyTargetter.anchoredPosition = new Vector2(0f, (Screen.height * 720f / Screen.width) + 10f);
@@ -83,6 +89,8 @@ public class SongSelectNavigation : MonoBehaviour
         scroller.ToggleSwipe(false);
         songSelect = true;
         animate = true;
+        scroller.ToggleClick(false);
+        Debug.Log("start animating");
     }
 
     void BackToMainMenu()
@@ -94,7 +102,15 @@ public class SongSelectNavigation : MonoBehaviour
 
     void DifficultySelect()
     {
-        if (animate) return;
+        // if (animate)
+        // {
+        //     Debug.Log("Canceling animation");
+        //     temporary.SetMapID(-1);
+        //     scroller.ToggleSwipe(true);
+        //     songSelect = true;
+        //     return;
+        // }
+
         screenTargetter.anchoredPosition = new Vector2(0f, -(Screen.height * 720f / Screen.width) - 1f);
         difficultyTargetter.anchoredPosition = Vector2.zero;
 
@@ -102,6 +118,8 @@ public class SongSelectNavigation : MonoBehaviour
         iTween.MoveTo(screen.gameObject, screenTargetter.transform.position, animateTime);
         iTween.MoveTo(difficultyScreen.gameObject, difficultyTargetter.transform.position, animateTime);
         animate = true;
+        scroller.ToggleClick(false);
+        Debug.Log("start animating");
         // StartCoroutine(delay(0.75f));
     }
 
@@ -123,13 +141,23 @@ public class SongSelectNavigation : MonoBehaviour
         iTween.MoveTo(screen.gameObject, screenTargetter.transform.position, animateTime);
         iTween.MoveTo(difficultyScreen.gameObject, difficultyTargetter.transform.position, animateTime);
         animate = true;
+        scroller.ToggleClick(false);
+        Debug.Log("start animating");
     }
 
     public void Snap(int index)
     {
-        if (animate) return;
+        // scroller.ToggleSwipe(false);
 
-        scroller.ToggleSwipe(false);
+        // if (animate)
+        // {
+        //     temporary.SetMapID(-1);
+        //     // scroller.ToggleSwipe(true);
+        //     songSelect = true;
+        //     return;
+        // }
+
+        // scroller.ToggleSwipe(false);
         songTargetter.anchoredPosition = new Vector2(index * -480f, songTargetter.anchoredPosition.y);
         float delta = Mathf.Abs(songHolder.anchoredPosition.x - songTargetter.anchoredPosition.x);
         Debug.Log($"holder = {songHolder.anchoredPosition.x}, targetter = {songTargetter.anchoredPosition.x}, delta = {delta}");
@@ -142,10 +170,14 @@ public class SongSelectNavigation : MonoBehaviour
         active = index;
 
         animate = true;
+        // scroller.ToggleClick(false);
+        Debug.Log("start animating");
     }
 
     public void Select(int index)
     {
+
+        scroller.ToggleSwipe(false);
         Debug.Log("Triggered Select");
         if (!animate)
         {
@@ -156,15 +188,22 @@ public class SongSelectNavigation : MonoBehaviour
 
     public void Selection(int index)
     {
-        Debug.Log($"selecting {index}");
+        scroller.ToggleSwipe(false);
+        Debug.Log($"selecting {index}, active = {active}");
         if (index == active)
         {
-            // StopTween();
-            temporary.SetMapID(index);
-            scroller.ToggleSwipe(false);
-            songSelect = false;
-            DifficultySelect();
+            if(!animate)
+            {
+                // StopTween();
+                temporary.SetMapID(index);
+                songSelect = false;
+                animate = true;
+                scroller.ToggleClick(false);
+                Debug.Log("Animating difficulty");
+                DifficultySelect();
+            }
         }
+        else Select(index);
     }
 
     public void ToggleAnimate(bool target)

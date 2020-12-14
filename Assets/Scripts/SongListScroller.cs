@@ -23,7 +23,6 @@ public class SongListScroller : MonoBehaviour
 
     void Update()
     {
-        // Debug.Log(swipeable);
         if(swipeable)
         {
             if (Input.touchCount >= 2)
@@ -35,11 +34,13 @@ public class SongListScroller : MonoBehaviour
             }
             else if (Input.touchCount == 1)
             {
+                if (iTween.tweens.Count > 0)
+                    iTween.Stop();
                 if (!twoFingered)
                 {
                     active = true;
                     Touch input = Input.GetTouch(0);
-                    if (input.deltaPosition.x != 0)
+                    if(input.phase == TouchPhase.Moved)
                     {
                         scrolling = true;
                         foreach (SongSelectionClick temp in click) temp.ToggleClick(false);
@@ -55,8 +56,8 @@ public class SongListScroller : MonoBehaviour
                 {
                     if (!scrolling)
                     {
-                        Debug.Log($"not scrolling. selecting item {index}");
-                        navigation.Select(index);
+                        Debug.Log($"not scrolling. ignoring");
+                        // navigation.Select(index);
                     }
                     else SnapSong();
                     scrolling = false;
@@ -74,6 +75,7 @@ public class SongListScroller : MonoBehaviour
 
     void SnapSong()
     {
+        Debug.Log("snapping");
         float x = songList.anchoredPosition.x;
 
         int target;
@@ -90,13 +92,9 @@ public class SongListScroller : MonoBehaviour
         this.index = index;
     }
 
-    public void DirectClick(int index)
-    {
-        navigation.Select(index);
-    }
-
     public bool Selection(int index)
     {
+        Debug.Log($"clicked {index}");
         if (scrolling) return false;
 
         navigation.Selection(index);
@@ -107,7 +105,6 @@ public class SongListScroller : MonoBehaviour
     {
         swipeable = !swipeable;
     }
-    
 
     public void ToggleSwipe(bool target)
     {
@@ -117,5 +114,10 @@ public class SongListScroller : MonoBehaviour
     public bool GetSwipeableStatus()
     {
         return swipeable;
+    }
+
+    public void ToggleClick(bool target)
+    {
+        foreach (SongSelectionClick temp in click) temp.ToggleClick(target);
     }
 }

@@ -28,8 +28,11 @@ public class SongSelectionClick : MonoBehaviour
 
     void Selection()
     {
-        Debug.Log(index);
-        scroller.Selection(index);
+        if(enableClick)
+        {
+            Debug.Log(index);
+            scroller.Selection(index);
+        }
     }
 
     public void MoveDown()
@@ -49,14 +52,13 @@ public class SongSelectionClick : MonoBehaviour
 
     public void MoveUp()
     {
-        Debug.Log("Move up");
         art.localPosition = new Vector3(position.x, position.y, position.z);
 
-        if (!touched && !twoFingers)
-        {
-            Debug.Log("Clicking");
-            scroller.DirectClick(index);
-        }
+        // if (!touched && !twoFingers)
+        // {
+        //     Debug.Log("Clicking");
+        //     scroller.DirectClick(index);
+        // }
         touched = false;
         twoFingers = false;
     }
