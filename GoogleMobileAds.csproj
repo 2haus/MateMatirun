@@ -337,6 +337,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Google.IOSResolver_v1.2.162">
       <HintPath>Library\PackageCache\com.google.external-dependency-manager@1.2.162\ExternalDependencyManager\Editor\Google.IOSResolver_v1.2.162.dll</HintPath>
     </Reference>
@@ -351,9 +354,6 @@
     </Reference>
     <Reference Include="Google.VersionHandlerImpl_v1.2.162">
       <HintPath>Library\PackageCache\com.google.external-dependency-manager@1.2.162\ExternalDependencyManager\Editor\Google.VersionHandlerImpl_v1.2.162.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.11f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuSettingButton : MonoBehaviour
 {
-    public MainMenuAd adGameObject;
+    // public MainMenuAd adGameObject;
+    public UnityBannerAd adGameObject;
 
     void Start()
     {

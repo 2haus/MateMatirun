@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class MainMenuPlayButton : MonoBehaviour
 {
     public Transform[] items; // put all items in the canvas here, later use fixed find method
-    public MainMenuAd adGameObject;
+    // public MainMenuAd adGameObject;
+    public UnityBannerAd adGameObject;
     bool animate, switching;
     float speed, time;
 
