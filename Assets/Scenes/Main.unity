@@ -1115,7 +1115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placementId: MainMenu
-  testMode: 1
+  testMode: 0
 --- !u!1 &1599008163
 GameObject:
   m_ObjectHideFlags: 0
