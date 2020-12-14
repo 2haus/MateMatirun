@@ -61,7 +61,7 @@ public class MusicCore : MonoBehaviour
         secPerBeat = 60f / songBPM;
 
         // Calculate timeGap (speed)
-        timeGap = 200f / songBPM;
+        timeGap = 250f / songBPM;
 
         // Call delay if only the first judgementTime under 1/2/3 seconds (testing)
         // Call countdown
