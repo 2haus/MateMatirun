@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerAnimation : MonoBehaviour
 {
     Animator playerAnim;
+    public ParticleSystem particleGenerator;
 
     public enum AnimationType { Idle, Run, Attack, Hurt };
     AnimationType types;
@@ -31,6 +32,7 @@ public class PlayerAnimation : MonoBehaviour
                 break;
 
             case AnimationType.Hurt:
+                particleGenerator.Play();
                 playerAnim.SetTrigger("Hurt");
                 break;
         }
