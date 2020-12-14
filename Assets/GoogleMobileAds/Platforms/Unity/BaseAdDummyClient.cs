@@ -28,7 +28,7 @@ namespace GoogleMobileAds.Unity
         public void LoadAndSetPrefabAd(string prefabName) {
             prefabAd = Resources.Load(prefabName) as GameObject;
             if (prefabAd == null) {
-                Debug.Log ("No Prefab found");
+                // Debug.Log ("No Prefab found");
             }
         }
 

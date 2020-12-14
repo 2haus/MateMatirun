@@ -47,7 +47,7 @@ namespace MMBackend.MapEditor
             var clip = Resources.Load<AudioClip>("Songs/" + path);
             if(clip == null)
             {
-                Debug.Log("File can't be opened due to errors in the file. Check the contents and try again.");
+                // Debug.Log("File can't be opened due to errors in the file. Check the contents and try again.");
                 return;
             }
 

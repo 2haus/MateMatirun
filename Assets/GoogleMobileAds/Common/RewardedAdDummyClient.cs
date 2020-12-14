@@ -24,7 +24,7 @@ namespace GoogleMobileAds.Common
     {
         public RewardedAdDummyClient()
         {
-            Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+            // Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
         }
 
         // Disable warnings for unused dummy ad events.
@@ -49,12 +49,12 @@ namespace GoogleMobileAds.Common
 
         public void CreateRewardedAd(string adUnitId)
         {
-            Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+            // Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
         }
 
         public void LoadAd(AdRequest request)
         {
-            Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+            // Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
 
             if (OnAdLoaded != null)
             {
@@ -64,35 +64,35 @@ namespace GoogleMobileAds.Common
 
         public bool IsLoaded()
         {
-            Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+            // Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
             return true;
         }
 
         public void Show()
         {
-            Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+            // Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
         }
 
         public string MediationAdapterClassName()
         {
-            Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+            // Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
             return null;
         }
 
         public Reward GetRewardItem()
         {
-            Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+            // Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
             return null;
         }
 
         public void SetServerSideVerificationOptions(ServerSideVerificationOptions serverSideVerificationOptions)
         {
-            Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+            // Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
         }
 
         public IResponseInfoClient GetResponseInfoClient()
         {
-            Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+            // Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
             return null;
         }
     }

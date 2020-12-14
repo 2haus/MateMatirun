@@ -23,11 +23,11 @@ public class Test : MonoBehaviour
     void Start()
     {
         audio = GetComponent<AudioSource>();
-        Debug.Log(paths[0]);
+        // Debug.Log(paths[0]);
 
         map = JsonConvert.DeserializeObject<Map>(Resources.Load<TextAsset>(paths[0]).ToString());
 
-        Debug.Log(Application.streamingAssetsPath + "/" + map.songPath);
+        // Debug.Log(Application.streamingAssetsPath + "/" + map.songPath);
         var clip = Resources.Load<AudioClip>("Songs" + "/" + map.songPath);
         audio.clip = clip;
         audio.volume = 0f;
@@ -37,7 +37,7 @@ public class Test : MonoBehaviour
         artist.text = map.artist;
         title.text = map.title;
 
-        Debug.Log(map.songPath);
+        // Debug.Log(map.songPath);
         input = 1;
 
         pause = false;
@@ -46,7 +46,7 @@ public class Test : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Debug.Log(audio.time + " / " + length);
+        // // Debug.Log(audio.time + " / " + length);
     }
 
     // Update is called once per frame
@@ -57,12 +57,12 @@ public class Test : MonoBehaviour
             if (audio.volume > 0f)
             {
                 audio.volume -= 0.05f;
-                Debug.Log(audio.volume);
+                // Debug.Log(audio.volume);
                 return;
             }
             else
             {
-                Debug.Log("else entered");
+                // Debug.Log("else entered");
                 if (invokeNext)
                 {
                     ChangeTrack(true);
@@ -77,7 +77,7 @@ public class Test : MonoBehaviour
         if (audio.isPlaying && !pause && audio.volume != 1f)
         {
             audio.volume += 0.05f;
-            Debug.Log(audio.volume);
+            // Debug.Log(audio.volume);
         }
 
         if(Input.GetKeyDown(KeyCode.RightArrow))
@@ -121,13 +121,13 @@ public class Test : MonoBehaviour
 
     void ReloadTrack()
     {
-        Debug.Log("Changing.");
+        // Debug.Log("Changing.");
         map = JsonConvert.DeserializeObject<Map>(Resources.Load<TextAsset>(paths[input - 1]).ToString());
         artist.text = map.artist;
         title.text = map.title;
 
         var clip = Resources.Load<AudioClip>("Songs" + "/" + map.songPath);
-        Debug.Log(map.songPath);
+        // Debug.Log(map.songPath);
         audio.clip = clip;
         SetTimeSampleToPreview();
         audio.Play();

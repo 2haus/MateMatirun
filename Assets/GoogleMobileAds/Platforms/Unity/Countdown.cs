@@ -36,7 +36,7 @@ public class Countdown : MonoBehaviour
 
         if (texts.Length < 2 || buttons.Length < 2)
         {
-            Debug.Log("Invalid Prefab");
+            // Debug.Log("Invalid Prefab");
             return;
         }
 

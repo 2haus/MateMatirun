@@ -24,7 +24,7 @@ namespace GoogleMobileAds.Common
   {
     public RewardedInterstitialAdDummyClient()
     {
-      Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+      // Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
     }
 
          // Disable warnings for unused dummy ad events.
@@ -49,33 +49,33 @@ namespace GoogleMobileAds.Common
 
         public void CreateRewardedInterstitialAd()
         {
-          Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+          // Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
         }
 
         public void LoadAd(string adUnitID, AdRequest request)
         {
-          Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+          // Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
         }
 
         public Reward GetRewardItem()
         {
-          Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+          // Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
           return null;
         }
 
         public void Show()
         {
-          Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+          // Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
         }
 
         public void SetServerSideVerificationOptions(ServerSideVerificationOptions serverSideVerificationOptions)
         {
-          Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+          // Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
         }
 
         public IResponseInfoClient GetResponseInfoClient()
         {
-          Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+          // Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
           return null;
         }
   }

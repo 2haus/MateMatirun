@@ -63,7 +63,7 @@ namespace GoogleMobileAds.Unity
 
             if (innerButtons.Length < 2)
             {
-                Debug.Log("Invalid Prefab");
+                // Debug.Log("Invalid Prefab");
                 return;
             }
 

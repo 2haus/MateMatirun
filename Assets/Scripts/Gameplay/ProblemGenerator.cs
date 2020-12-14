@@ -71,7 +71,7 @@ public class ProblemGenerator : MonoBehaviour
                         break;
 
                     default:
-                        Debug.LogError("Error occured while trying to Generate a Math Problem");
+                        // Debug.LogError("Error occured while trying to Generate a Math Problem");
                         break;
                 }
                 // To make sure the generated incorrect answer will not be the same

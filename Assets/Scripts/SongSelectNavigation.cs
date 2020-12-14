@@ -65,7 +65,7 @@ public class SongSelectNavigation : MonoBehaviour
                     scroller.ToggleSwipe(true);
                     scroller.ToggleClick(true);
                 }
-                Debug.Log("animation stop");
+                // Debug.Log("animation stop");
                 time = 0f;
             }
         }
@@ -75,7 +75,7 @@ public class SongSelectNavigation : MonoBehaviour
     {
         if (animate) return;
 
-        Debug.Log("back");
+        // Debug.Log("back");
         songHolder.anchoredPosition = new Vector2(active * -480f, 109f);
 
         screenTargetter.anchoredPosition = Vector2.zero;
@@ -90,7 +90,7 @@ public class SongSelectNavigation : MonoBehaviour
         songSelect = true;
         animate = true;
         scroller.ToggleClick(false);
-        Debug.Log("start animating");
+        // Debug.Log("start animating");
     }
 
     void BackToMainMenu()
@@ -104,7 +104,7 @@ public class SongSelectNavigation : MonoBehaviour
     {
         // if (animate)
         // {
-        //     Debug.Log("Canceling animation");
+        //     // Debug.Log("Canceling animation");
         //     temporary.SetMapID(-1);
         //     scroller.ToggleSwipe(true);
         //     songSelect = true;
@@ -119,13 +119,13 @@ public class SongSelectNavigation : MonoBehaviour
         iTween.MoveTo(difficultyScreen.gameObject, difficultyTargetter.transform.position, animateTime);
         animate = true;
         scroller.ToggleClick(false);
-        Debug.Log("start animating");
+        // Debug.Log("start animating");
         // StartCoroutine(delay(0.75f));
     }
 
     void StopTween()
     {
-        Debug.Log("stopping tween");
+        // Debug.Log("stopping tween");
         if (iTween.tweens.Count > 0) iTween.Stop();
         screen.anchoredPosition = screenTargetter.anchoredPosition;
         difficultyScreen.anchoredPosition = difficultyTargetter.anchoredPosition;
@@ -142,7 +142,7 @@ public class SongSelectNavigation : MonoBehaviour
         iTween.MoveTo(difficultyScreen.gameObject, difficultyTargetter.transform.position, animateTime);
         animate = true;
         scroller.ToggleClick(false);
-        Debug.Log("start animating");
+        // Debug.Log("start animating");
     }
 
     public void Snap(int index)
@@ -160,7 +160,7 @@ public class SongSelectNavigation : MonoBehaviour
         // scroller.ToggleSwipe(false);
         songTargetter.anchoredPosition = new Vector2(index * -480f, songTargetter.anchoredPosition.y);
         float delta = Mathf.Abs(songHolder.anchoredPosition.x - songTargetter.anchoredPosition.x);
-        Debug.Log($"holder = {songHolder.anchoredPosition.x}, targetter = {songTargetter.anchoredPosition.x}, delta = {delta}");
+        // Debug.Log($"holder = {songHolder.anchoredPosition.x}, targetter = {songTargetter.anchoredPosition.x}, delta = {delta}");
         if (delta > 225f) animateTime = 1.25f;
         else animateTime = delta / 225f * 1.25f;
 
@@ -171,14 +171,14 @@ public class SongSelectNavigation : MonoBehaviour
 
         animate = true;
         // scroller.ToggleClick(false);
-        Debug.Log("start animating");
+        // Debug.Log("start animating");
     }
 
     public void Select(int index)
     {
 
         scroller.ToggleSwipe(false);
-        Debug.Log("Triggered Select");
+        // Debug.Log("Triggered Select");
         if (!animate)
         {
             // StopTween();
@@ -189,7 +189,7 @@ public class SongSelectNavigation : MonoBehaviour
     public void Selection(int index)
     {
         scroller.ToggleSwipe(false);
-        Debug.Log($"selecting {index}, active = {active}");
+        // Debug.Log($"selecting {index}, active = {active}");
         if (index == active)
         {
             if(!animate)
@@ -199,7 +199,7 @@ public class SongSelectNavigation : MonoBehaviour
                 songSelect = false;
                 animate = true;
                 scroller.ToggleClick(false);
-                Debug.Log("Animating difficulty");
+                // Debug.Log("Animating difficulty");
                 DifficultySelect();
             }
         }

@@ -63,7 +63,7 @@ namespace MMBackend.MapEditor
 
                 var json = Resources.Load<TextAsset>(temp);
                 open = JsonConvert.DeserializeObject<Map>(json.text);
-                Debug.Log("Loaded using Resources.Load()");
+                // Debug.Log("Loaded using Resources.Load()");
             }
             else
             {

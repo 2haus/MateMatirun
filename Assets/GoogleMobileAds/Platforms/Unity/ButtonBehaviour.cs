@@ -23,7 +23,7 @@ public class ButtonBehaviour : MonoBehaviour
 
     public void OpenURL()
     {
-        Debug.Log("Opened URL");
+        // Debug.Log("Opened URL");
         Application.OpenURL("http://google.com");
         if (OnAdOpening != null)
         {

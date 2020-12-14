@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
         // Countdown Delay in seconds
         for (int i = countFromSeconds; i > 0; i--)
         {
-            Debug.Log(i);
+            // Debug.Log(i);
             yield return new WaitForSeconds(1);
         }
 

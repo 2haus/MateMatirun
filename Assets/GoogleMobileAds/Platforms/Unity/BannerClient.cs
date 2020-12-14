@@ -183,7 +183,7 @@ namespace GoogleMobileAds.Unity
                 AnchorAd(dummyAd, adPosition);
             } else
             {
-                Debug.Log("No existing banner in game");
+                // Debug.Log("No existing banner in game");
             }
         }
 
@@ -196,7 +196,7 @@ namespace GoogleMobileAds.Unity
                 rect.anchoredPosition = new Vector2(x, y);
             } else
             {
-                Debug.Log("No existing banner in game");
+                // Debug.Log("No existing banner in game");
             }
         }
 
@@ -240,7 +240,7 @@ namespace GoogleMobileAds.Unity
                     rect.anchoredPosition = rect.position;
                 }
             } else {
-                Debug.Log("Invalid Dummy Ad");
+                // Debug.Log("Invalid Dummy Ad");
             }
         }
 
@@ -299,7 +299,7 @@ namespace GoogleMobileAds.Unity
                         break;
                 }
             } else {
-                Debug.Log("Invalid Dummy Ad");
+                // Debug.Log("Invalid Dummy Ad");
             }
         }
 

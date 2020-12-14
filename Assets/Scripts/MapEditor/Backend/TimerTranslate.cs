@@ -28,7 +28,7 @@ namespace MMBackend.MapEditor
             if(deltaTime > 1f)
             {
                 float delta = deltaPos / deltaTime;
-                Debug.Log("Time: " + time + " (delta: " + deltaTime + "),  X: " + x + " (delta: " + deltaPos + "), Avg Speed: " + delta + "/sec");
+                // Debug.Log("Time: " + time + " (delta: " + deltaTime + "),  X: " + x + " (delta: " + deltaPos + "), Avg Speed: " + delta + "/sec");
 
                 deltaPos = deltaTime = 0f;
             }

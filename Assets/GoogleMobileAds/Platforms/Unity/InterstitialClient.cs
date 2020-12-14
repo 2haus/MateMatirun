@@ -134,7 +134,7 @@ namespace GoogleMobileAds.Unity
                 }
             } else
             {
-                Debug.Log("No Ad Loaded");
+                // Debug.Log("No Ad Loaded");
             }
         }
 

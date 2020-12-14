@@ -20,13 +20,13 @@ public class DummyAdBehaviour : MonoBehaviour
     public void PauseGame()
     {
         Time.timeScale = 0;
-        Debug.Log("Pause Game");
+        // Debug.Log("Pause Game");
     }
 
     public void ResumeGame()
     {
         Time.timeScale = 1;
-        Debug.Log("Resume Game");
+        // Debug.Log("Resume Game");
     }
 
     public GameObject ShowAd(GameObject dummyAd, Vector3 position)

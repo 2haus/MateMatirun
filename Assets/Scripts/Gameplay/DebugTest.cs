@@ -17,10 +17,10 @@ public class DebugTest : MonoBehaviour
     private void OnMouseDown()
     {
         song = SaveLoad.LoadMap(path);
-        Debug.Log("Game Start");
-        Debug.Log(song.title);
+        // Debug.Log("Game Start");
+        // Debug.Log(song.title);
         map.LoadMap(song, difficulty);
-        Debug.Log(difficulty);
+        // Debug.Log(difficulty);
     }
 
     public void SetPath(string target)

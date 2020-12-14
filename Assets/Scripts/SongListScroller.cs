@@ -27,7 +27,7 @@ public class SongListScroller : MonoBehaviour
         {
             if (Input.touchCount >= 2)
             {
-                Debug.Log("Two fingers detected!");
+                // Debug.Log("Two fingers detected!");
                 twoFingered = true;
                 active = true;
                 if(scrolling) SnapSong();
@@ -50,13 +50,13 @@ public class SongListScroller : MonoBehaviour
             }
             else if (Input.touchCount == 0 && active)
             {
-                Debug.Log($"twoFingered: {twoFingered}");
+                // Debug.Log($"twoFingered: {twoFingered}");
                 // int index = (int)(Mathf.Abs(songList.anchoredPosition.x) - 240) / 480;
                 if (!twoFingered)
                 {
                     if (!scrolling)
                     {
-                        Debug.Log($"not scrolling. ignoring");
+                        // Debug.Log($"not scrolling. ignoring");
                         // navigation.Select(index);
                     }
                     else SnapSong();
@@ -75,7 +75,7 @@ public class SongListScroller : MonoBehaviour
 
     void SnapSong()
     {
-        Debug.Log("snapping");
+        // Debug.Log("snapping");
         float x = songList.anchoredPosition.x;
 
         int target;
@@ -83,7 +83,7 @@ public class SongListScroller : MonoBehaviour
         else target = 0;
         if (target < 0) target = 0;
         else if (target > 3) target = 3;
-        // Debug.Log($"{x}, {index}");
+        // // Debug.Log($"{x}, {index}");
         navigation.Snap(target);
     }
 
@@ -94,7 +94,7 @@ public class SongListScroller : MonoBehaviour
 
     public bool Selection(int index)
     {
-        Debug.Log($"clicked {index}");
+        // Debug.Log($"clicked {index}");
         if (scrolling) return false;
 
         navigation.Selection(index);
